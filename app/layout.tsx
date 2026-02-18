@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${plusJakarta.variable} antialiased text-[#0A0A0A]`}
         style={{ fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" }}
