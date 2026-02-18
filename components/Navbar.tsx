@@ -13,28 +13,33 @@ type NavItem =
 const NAV: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Book Now", href: "/book-now" },
+
   {
     label: "Driving Lessons",
     href: "/driving-lessons",
     items: [
-      { label: "Areas", href: "/driving-lessons/areas" },
-      { label: "Automatic Driving Lessons", href: "/driving-lessons/automatic-driving-lessons" },
+      // { label: "Areas", href: "/driving-lessons/areas" },
+      {
+        label: "Automatic Driving Lessons",
+        href: "/driving-lessons/automatic-driving-lessons",
+      },
       { label: "Prices", href: "/driving-lessons/prices" },
       { label: "FAQ", href: "/driving-lessons/faq" },
     ],
   },
-  { label: "Intensives", href: "/intensives" },
-  {
-    label: "Instructor Training",
-    href: "/instructor-training",
-    items: [
-      { label: "Instructor Training", href: "/instructor-training" },
-      { label: "Franchise", href: "/instructor-training/franchise" },
-      { label: "Jobs", href: "/instructor-training/jobs" },
-      { label: "PDI Part 3 Rescue Plan", href: "/instructor-training/pdi-part-3-rescue-plan" },
-    ],
-  },
+  // { label: "Intensives", href: "/intensives" },
+  // {
+  //   label: "Instructor Training",
+  //   href: "/instructor-training",
+  //   items: [
+  //     { label: "Instructor Training", href: "/instructor-training" },
+  //     { label: "Franchise", href: "/instructor-training/franchise" },
+  //     { label: "Jobs", href: "/instructor-training/jobs" },
+  //     { label: "PDI Part 3 Rescue Plan", href: "/instructor-training/pdi-part-3-rescue-plan" },
+  //   ],
+  // },
   { label: "Blogs", href: "/blogs" },
+  { label: "Careers", href: "/careers" },
   {
     label: "Useful Info",
     href: "/useful-info",
@@ -75,7 +80,6 @@ export function Navbar() {
               alt="Zell Driving School logo"
               className="h-15 w-30 "
             />
-            
           </Link>
 
           <div className="hidden items-center gap-8 lg:flex">
@@ -95,9 +99,13 @@ export function Navbar() {
                   >
                     <button
                       type="button"
-                      onClick={() => setOpenDropdown((v) => (v === label ? null : label))}
+                      onClick={() =>
+                        setOpenDropdown((v) => (v === label ? null : label))
+                      }
                       className={`text-sm font-semibold transition ${
-                        active ? "text-gray-900" : "text-gray-700 hover:text-gray-900"
+                        active
+                          ? "text-gray-900"
+                          : "text-gray-700 hover:text-gray-900"
                       }`}
                     >
                       {label} ▾
@@ -131,7 +139,9 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={`text-sm font-semibold transition ${
-                    active ? "text-gray-900" : "text-gray-700 hover:text-gray-900"
+                    active
+                      ? "text-gray-900"
+                      : "text-gray-700 hover:text-gray-900"
                   }`}
                 >
                   {label}
@@ -141,7 +151,10 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link href="/book-now" className="btn-primary hidden md:inline-flex">
+            <Link
+              href="/book-now"
+              className="btn-primary hidden md:inline-flex"
+            >
               Book Now
             </Link>
             <button
@@ -169,7 +182,9 @@ export function Navbar() {
                         type="button"
                         className="flex w-full items-center justify-between py-3 text-left font-semibold text-gray-900"
                         onClick={() =>
-                          setOpenDropdown((v) => (v === item.label ? null : item.label))
+                          setOpenDropdown((v) =>
+                            v === item.label ? null : item.label,
+                          )
                         }
                       >
                         {item.label}

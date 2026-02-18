@@ -1,19 +1,19 @@
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { PageShell } from "@/components/PageShell";
-import { PAGE_CONTENT } from "@/lib/pageContent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Book Now - Drive 4 Pass Driving School",
+  title: "Careers - Drive 4 Pass Driving School",
   description:
-    "Book your driving lessons with Drive 4 Pass. Choose from standard lessons, intensive courses, ADI training, or franchise opportunities.",
+    "Join the Drive 4 Pass team. Apply to become a driving instructor and enjoy flexible working, great earnings, and full support.",
 };
 
-export default function Page() {
-  const content = PAGE_CONTENT.bookNow;
-
+export default function CareersPage() {
   return (
-    <PageShell title={content.title} intro={content.intro}>
+    <PageShell
+      title="Join Our Team"
+      intro="Become a Drive 4 Pass driving instructor and enjoy flexible working hours, competitive earnings, and full ongoing support."
+    >
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* Form Section with Map */}
         <section className="py-12 sm:py-16 bg-gray-50">
@@ -22,16 +22,16 @@ export default function Page() {
             <div className="text-center mb-12">
               <div className="inline-block mb-4">
                 <span className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 border border-gray-200">
-                  Get In Touch
+                  Instructor Application
                 </span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                Start your driving journey today
+                Start your instructor journey today
               </h2>
               <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-                Take the first step toward confident and safe driving with our
-                expert instructors and structured lessons designed for all skill
-                levels.
+                Whether you're a PDI or qualified ADI, we'd love to hear from
+                you. Fill in the form and one of our team will be in touch to
+                discuss the next steps.
               </p>
             </div>
 
@@ -53,13 +53,13 @@ export default function Page() {
 
               {/* Form */}
               <div>
-                <EnquiryForm allowedTabs={["Lessons"]} />
+                <EnquiryForm allowedTabs={["Instructor Application"]} />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Contact Info Boxes - Below Form */}
+        {/* Contact Info Boxes */}
         <section className="py-12 sm:py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">

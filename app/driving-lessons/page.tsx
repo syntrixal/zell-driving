@@ -10,8 +10,11 @@ export default function DrivingLessonsPage() {
     <PageShell title={content.title} intro={content.intro}>
       <div className="space-y-2 py-20 md:py-24 px-6 sm:px-8 lg:px-12">
         {[
-          { label: "Areas", href: "/driving-lessons/areas" },
-          { label: "Automatic Driving Lessons", href: "/driving-lessons/automatic-driving-lessons" },
+          // { label: "Areas", href: "/driving-lessons/areas" },
+          {
+            label: "Automatic Driving Lessons",
+            href: "/driving-lessons/automatic-driving-lessons",
+          },
           { label: "Prices", href: "/driving-lessons/prices" },
           { label: "FAQ", href: "/driving-lessons/faq" },
         ].map((l) => (
