@@ -7,7 +7,7 @@ const footerLinks = [
     links: [
       { label: "About Us", href: "/" },
       { label: "Our Courses", href: "/driving-lessons" },
-      { label: "Instructors", href: "/instructor-training" },
+      { label: "Careers", href: "/careers" },
       { label: "Contact", href: "/book-now" },
     ],
   },
@@ -24,12 +24,14 @@ const footerLinks = [
     title: "Driving Lessons",
     links: [
       { label: "Areas", href: "/driving-lessons/areas" },
-      { label: "Automatic Lessons", href: "/driving-lessons/automatic-driving-lessons" },
+      {
+        label: "Automatic Lessons",
+        href: "/driving-lessons/automatic-driving-lessons",
+      },
       { label: "Prices", href: "/driving-lessons/prices" },
       { label: "FAQ", href: "/driving-lessons/faq" },
     ],
   },
-
 ];
 
 export function Footer() {
@@ -38,19 +40,18 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         <div className="mb-16 grid gap-12 lg:gap-16 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-          <Link href="/" className="flex items-center gap-2">
-            {/* Replace logo-placeholder.png with the real brand logo here */}
-            <img
-              src="/zell_driving_school_logo_white.png"
-              alt="Zell Driving School logo"
-              className="h-20 w-40 "
-            />
-            
-          </Link>
+            <Link href="/" className="flex items-center gap-2">
+              {/* Replace logo-placeholder.png with the real brand logo here */}
+              <img
+                src="/zell_driving_school_logo_white.png"
+                alt="Zell Driving School logo"
+                className="h-20 w-40 "
+              />
+            </Link>
             <p className="text-sm leading-relaxed text-gray-400 pt-3">
-              Professional driving school dedicated to building confident, safe drivers.building confident, safe drivers.
+              Professional driving school dedicated to building confident, safe
+              drivers.building confident, safe drivers.
             </p>
-            
           </div>
           {footerLinks.map((group) => (
             <div key={group.title}>
@@ -58,7 +59,10 @@ export function Footer() {
               <ul className="space-y-2 text-sm text-gray-400">
                 {group.links.map((l) => (
                   <li key={l.label}>
-                    <Link href={l.href} className="transition hover:text-[#FFD60A]">
+                    <Link
+                      href={l.href}
+                      className="transition hover:text-[#FFD60A]"
+                    >
                       {l.label}
                     </Link>
                   </li>

@@ -35,7 +35,7 @@ const features = [
   {
     icon: TrendingUp,
     title: "High Pass Rate",
-    desc: "Structured lesson plans with proven success across Greater Manchester.",
+    desc: "Structured lesson plans with proven success across Liverpool.",
   },
   {
     icon: Car,
@@ -79,7 +79,7 @@ const blogs = [
   },
   {
     title:
-      "How to Prepare Effectively and Pass Your Driving Test on the First Attempt in Manchester",
+      "How to Prepare Effectively and Pass Your Driving Test on the First Attempt in Liverpool",
     img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=400&fit=crop",
   },
   {
@@ -93,7 +93,7 @@ const testimonials = [
   {
     name: "Sarah Mitchell",
     rating: 5,
-    text: "Passed first time thanks to Drive 4 Pass! The instructors are patient and professional. Highly recommend!",
+    text: "Passed first time thanks to Zell Driving! The instructors are patient and professional. Highly recommend!",
     avatar: "SM",
   },
   {
@@ -105,7 +105,7 @@ const testimonials = [
   {
     name: "Emma Davies",
     rating: 5,
-    text: "The best driving school in Manchester! My instructor was calm, encouraging and helped me build real confidence.",
+    text: "The best driving school in Liverpool! My instructor was calm, encouraging and helped me build real confidence.",
     avatar: "ED",
   },
 ];
@@ -128,7 +128,7 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        {/* <Container className={`relative z-10 ${containerClass}`}>
+        <Container className={`relative z-10 ${containerClass}`}>
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 backdrop-blur-sm">
               <span className="h-2 w-2 rounded-full bg-white" />
@@ -142,74 +142,14 @@ export default function HomePage() {
               IN LIVERPOOL
             </h1>
             <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg md:text-xl">
-              Learn to drive with Drive 4 Pass, a trusted Liverpool driving
+              Learn to drive with Zell Driving, a trusted Liverpool driving
               school offering professional driving lessons across Liverpool. Our
               DVSA-approved instructors provide flexible lesson times, patient
               one-to-one tuition, and high first-time pass rates.
             </p>
           </div>
-        </Container>
-      </section> */}
 
-        <Container className={containerClass}>
           <HomeBookingForm />
-        </Container>
-      </section>
-
-      {/* Booking Form */}
-      <section className="relative z-30 -mt-24 mb-20 md:mb-24">
-        <Container className={containerClass}>
-          <div className="rounded-3xl border border-gray-100 bg-white p-8 shadow-lg sm:p-10 lg:p-14">
-            <div className="mb-10 text-center">
-              <h2 className="mb-3 text-2xl font-black sm:text-3xl">
-                Book Your First Lesson
-              </h2>
-              <p className="text-base text-gray-600">
-                Choose your preferred time and get started today
-              </p>
-            </div>
-            <div className="mb-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 font-medium transition focus:border-[#c41e3a] focus:outline-none"
-              />
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 font-medium transition focus:border-[#c41e3a] focus:outline-none"
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 font-medium transition focus:border-[#c41e3a] focus:outline-none"
-              />
-            </div>
-            <div className="mb-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              <input
-                type="text"
-                placeholder="Postal Code"
-                className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 font-medium transition focus:border-[#c41e3a] focus:outline-none"
-              />
-              <select className="w-full appearance-none rounded-2xl border-2 border-gray-200 bg-white px-5 py-4 font-medium transition focus:border-[#c41e3a] focus:outline-none">
-                <option>Select Course Type</option>
-                <option>Automatic Lessons</option>
-              </select>
-              <input
-                type="date"
-                className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 font-medium transition focus:border-[#c41e3a] focus:outline-none"
-              />
-            </div>
-            <div className="flex justify-center">
-              <Link
-                href="/book-now"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#c41e3a]/30 hover:scale-105"
-              >
-                <Calendar className="h-5 w-5" />
-                Book Your Lesson Now
-              </Link>
-            </div>
-          </div>
         </Container>
       </section>
 
@@ -226,9 +166,9 @@ export default function HomePage() {
                 <span className="text-[#c41e3a]">Driving</span>
               </h2>
               <p className="mb-10 max-w-xl text-lg leading-relaxed text-gray-600">
-                Drive 4 Pass offers professional driving instruction across
-                Greater Manchester and surrounding areas with expert
-                instructors, modern vehicles, and flexible scheduling.
+                Zell Driving offers professional driving instruction across
+                Liverpool and surrounding areas with expert instructors, modern
+                vehicles, and flexible scheduling.
               </p>
               <div className="space-y-6">
                 {[
@@ -269,12 +209,12 @@ export default function HomePage() {
               <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
                 {[
                   {
-                    title: "140+ Areas Covered",
-                    desc: "Serving communities across Greater Manchester",
+                    title: "All Liverpool Areas Covered",
+                    desc: "Serving communities across Liverpool",
                   },
                   {
                     title: "100+ Instructors",
-                    desc: "Large team of certified professionals",
+                    desc: "Large team of certified Liverpool professionals",
                   },
                 ].map((card, i) => (
                   <div
@@ -301,11 +241,12 @@ export default function HomePage() {
               Why Choose Us?
             </span>
             <h2 className="mt-6 mb-6 text-4xl font-black leading-tight sm:text-5xl">
-              Why Choose <span className="text-[#c41e3a]">Drive 4 Pass</span>?
+              Why Choose <span className="text-[#c41e3a]">Zell Driving</span>?
             </h2>
             <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600">
               Professional instruction, flexible scheduling, and a learning
-              experience built to make you a confident, safe driver.
+              experience built to make you a confident, safe driver in
+              Liverpool.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
@@ -336,11 +277,11 @@ export default function HomePage() {
         <Container className={containerClass}>
           <div className="max-w-5xl mx-auto text-center text-white">
             <h2 className="mb-6 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
-              Get Started with Drive 4 Pass
+              Get Started with Zell Driving
             </h2>
             <p className="mb-10 text-base leading-relaxed text-white/90 sm:text-lg lg:text-xl max-w-3xl mx-auto">
               Start your driving journey today with professional instruction,
-              flexible scheduling, and proven results across Greater Manchester.
+              flexible scheduling, and proven results across Liverpool.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -357,10 +298,10 @@ export default function HomePage() {
               </Link>
             </div>
 
-            {/* Tags Below */}
+            {/* Tags */}
             <div className="mt-12 flex flex-wrap justify-center gap-4">
               {[
-                "Manchester Driving School",
+                "Liverpool Driving School",
                 "Automatic Lessons",
                 "Intensive Courses",
                 "Pass Plus Training",
@@ -375,7 +316,7 @@ export default function HomePage() {
               ))}
             </div>
 
-            {/* Contact Us Section */}
+            {/* Contact */}
             <div className="mt-8 flex items-center justify-center gap-3 text-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
                 <svg
@@ -412,9 +353,9 @@ export default function HomePage() {
               <span className="text-[#c41e3a]">confidence</span>
             </h2>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600">
-              Our certified programs are designed to provide structured,
-              professional training that builds both driving skills and
-              confidence.
+              Our certified Liverpool programs are designed to provide
+              structured, professional training that builds both driving skills
+              and confidence.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
@@ -465,7 +406,7 @@ export default function HomePage() {
               What our <span className="text-[#c41e3a]">students say</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Real reviews from real students
+              Real reviews from real Liverpool students
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
@@ -492,7 +433,7 @@ export default function HomePage() {
                   <div>
                     <div className="font-bold">{testimonial.name}</div>
                     <div className="text-sm text-gray-500">
-                      Verified Student
+                      Verified Student — Liverpool
                     </div>
                   </div>
                 </div>

@@ -39,7 +39,7 @@ const NAV: NavItem[] = [
   //   ],
   // },
   { label: "Blogs", href: "/blogs" },
-  { label: "Careers", href: "/careers" },
+  { label: "Instructor Training", href: "/instructor-training" },
   {
     label: "Useful Info",
     href: "/useful-info",

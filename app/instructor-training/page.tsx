@@ -3,82 +3,107 @@
 import { PageShell } from "@/components/PageShell";
 import { PAGE_CONTENT } from "@/lib/pageContent";
 import Link from "next/link";
-import { ArrowRight, Calendar, Smile, Dumbbell, Car, CheckCircle, DollarSign, MapPin, GraduationCap, BookOpen, Users, Award, Star } from "lucide-react";
+import {
+  ArrowRight,
+  Calendar,
+  Smile,
+  Dumbbell,
+  Car,
+  CheckCircle,
+  DollarSign,
+  MapPin,
+  GraduationCap,
+  BookOpen,
+  Users,
+  Award,
+  Star,
+} from "lucide-react";
 import { useState } from "react";
 
 const whyBecomeInstructor = [
   {
     icon: Calendar,
     title: "Flexible Work Schedule",
-    description: "Set your own schedule and work hours to suit your lifestyle. Being a driving instructor gives you the freedom to choose your hours."
+    description:
+      "Set your own schedule and work hours to suit your lifestyle. Being a driving instructor with Zell Driving in Liverpool gives you the freedom to choose your hours.",
   },
   {
     icon: Smile,
     title: "Make a Positive Impact",
-    description: "Transform lives by teaching a vital skill. You're not just teaching driving - you're giving people the freedom and confidence to explore the world."
+    description:
+      "Transform lives by teaching a vital skill. You're not just teaching driving — you're giving Liverpool residents the freedom and confidence to explore the world.",
   },
   {
     icon: Dumbbell,
     title: "Diverse and Engaging Students",
-    description: "Work with people of all ages and backgrounds, getting real-time human-to-person coaching and creating lifelong learner just starting."
+    description:
+      "Work with people of all ages and backgrounds across Liverpool, getting real-time human-to-person coaching and creating lifelong learners.",
   },
   {
     icon: Car,
     title: "Comfortable Work Environment",
-    description: "Use premium vehicles. Most ADIs enjoy the comfort of modern cars that are well-maintained, making from your own car while experiencing the freedom."
+    description:
+      "Use premium vehicles. Most Zell Driving ADIs enjoy the comfort of modern, well-maintained cars across Liverpool, making your working day a pleasure.",
   },
   {
     icon: CheckCircle,
     title: "Financial Benefits and Tax Savings",
-    description: "Self-employment tax benefits mean you could boost your earnings through tax deductions on expenses like fuel, maintenance, and vehicle payments."
+    description:
+      "Self-employment tax benefits mean you could boost your earnings through tax deductions on expenses like fuel, maintenance, and vehicle payments.",
   },
   {
     icon: DollarSign,
     title: "Consistent Demand and Income",
-    description: "The driving instruction industry is stable and recession-resistant. Becoming the demand for driving instruction is constant. Enjoy financial stability and dependable income!"
+    description:
+      "Liverpool's driving instruction industry is stable and recession-resistant. Enjoy financial stability and dependable income with Zell Driving!",
   },
   {
     icon: MapPin,
-    title: "Contribute to Safer Roads",
-    description: "Feel proud knowing you're improving road safety by training safer drivers. You're helping shape safer, more confident road users."
-  }
+    title: "Contribute to Safer Liverpool Roads",
+    description:
+      "Feel proud knowing you're improving road safety across Liverpool by training safer, more confident drivers in your local community.",
+  },
 ];
 
 const whyTrainWithUs = [
   {
     title: "Modern Teaching Techniques",
-    description: "Stay ahead of the curve with the latest teaching methods and tools, ensuring drivers be highly professional, techniques coach successful and award-trained."
+    description:
+      "Stay ahead of the curve with the latest teaching methods and tools, ensuring Zell Driving instructors are highly professional and award-trained.",
   },
   {
     title: "Comprehensive Training for ADI Qualification",
-    description: "Our program covers everything you need to become a fully qualified approved driving instructor (ADI) under the DVSA standards."
+    description:
+      "Our Liverpool-based program covers everything you need to become a fully qualified approved driving instructor (ADI) under DVSA standards.",
   },
   {
     title: "Career Development and Ongoing Support",
-    description: "We don't just help you to pass the test -- we help you build a successful career with ongoing coaching, mentorship and business training."
+    description:
+      "We don't just help you pass the test — we help you build a successful career in Liverpool with ongoing coaching, mentorship and business training.",
   },
   {
     title: "Flexible Payment Options",
-    description: "We offer flexible payment plans to suit your budget, making it easier to start your career without financial stress."
-  }
+    description:
+      "We offer flexible payment plans to suit your budget, making it easier to start your Liverpool driving instructor career without financial stress.",
+  },
 ];
 
 const testimonials = [
   {
     name: "Paul Hussain",
-    text: "I enjoy teaching and helping students become safe drivers. This career gives me the flexibility to spend time with my family while earning a great income.",
-    rating: 5
+    text: "I enjoy teaching and helping students become safe drivers in Liverpool. Zell Driving gave me the flexibility to spend time with my family while earning a great income.",
+    rating: 5,
   },
   {
     name: "Sarah Mitchell",
-    text: "The training was comprehensive and the support team was amazing. I passed my ADI test first time and now run my own successful driving school.",
-    rating: 5
+    text: "The training at Zell Driving was comprehensive and the support team was amazing. I passed my ADI test first time and now run my own successful driving school in Liverpool.",
+    rating: 5,
   },
   {
     name: "James Thompson",
-    text: "Best decision I ever made. The flexibility and earning potential are excellent, plus I get genuine satisfaction from helping people achieve their goals.",
-    rating: 5
-  }
+    text: "Best decision I ever made. Zell Driving's flexibility and earning potential in Liverpool are excellent, plus I get genuine satisfaction from helping people achieve their goals.",
+    rating: 5,
+  },
 ];
 
 export default function InstructorTrainingPage() {
@@ -98,7 +123,8 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Join our ADI Training in Manchester today and get started towards a new career
+                Join Zell Driving's ADI Training in Liverpool today and get
+                started towards a new career
               </h2>
             </div>
           </div>
@@ -111,20 +137,26 @@ export default function InstructorTrainingPage() {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div className="text-gray-900">
                   <p className="text-lg sm:text-xl leading-relaxed">
-                    Looking for a fulfilling career with flexibility and high earning potential? Become a driving instructor with Drive 4 Pass. Enjoy the freedom of being your own boss, the reward of transforming lives, and the security of consistent demand. Start your journey today with our award-winning instructor training program.
+                    Looking for a fulfilling career with flexibility and high
+                    earning potential in Liverpool? Become a driving instructor
+                    with Zell Driving. Enjoy the freedom of being your own boss,
+                    the reward of transforming lives, and the security of
+                    consistent demand across Liverpool. Start your journey today
+                    with our award-winning instructor training program.
                   </p>
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border-2 border-gray-900">
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
-                    Ready to get started? Contact us today to learn more about our instructor training!
+                    Ready to get started? Contact Zell Driving today to learn
+                    more about our Liverpool instructor training!
                   </h3>
-          <Link
+                  <Link
                     href="/book-now"
                     className="inline-flex items-center gap-3 px-6 py-3 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
+                  >
                     Contact Us
                     <ArrowRight className="h-5 w-5" />
-          </Link>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -136,9 +168,8 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-                Why Become a Driving Instructor with Drive 4 Pass?
+                Why Become a Driving Instructor with Zell Driving in Liverpool?
               </h2>
-
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 {whyBecomeInstructor.map((benefit, index) => {
                   const Icon = benefit.icon;
@@ -175,13 +206,13 @@ export default function InstructorTrainingPage() {
                       <GraduationCap className="w-20 h-20 mx-auto" />
                     </div>
                     <h3 className="text-2xl sm:text-3xl font-bold mb-2">
-                      Start Your Instructor Training
+                      Start Your Instructor Training in Liverpool
                     </h3>
                     <p className="text-lg sm:text-xl mb-4">
-                      Transform Your Career with Drive 4 Pass
+                      Transform Your Career with Zell Driving
                     </p>
                     <div className="bg-white text-green-600 px-6 py-3 rounded-full font-bold inline-block">
-                      DRIVE4PASS
+                      ZELL DRIVING
                     </div>
                   </div>
                 </div>
@@ -195,9 +226,13 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-                Ready to start a rewarding career? Contact us today to begin your instructor training!
+                Ready to start a rewarding career in Liverpool? Contact Zell
+                Driving today to begin your instructor training!
               </h3>
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center">
+              <form
+                onSubmit={handleSubmit}
+                className="flex flex-col sm:flex-row gap-4 justify-center"
+              >
                 <input
                   type="email"
                   placeholder="Enter your email/mobile"
@@ -222,9 +257,8 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-                Why Train with Drive 4 Pass?
+                Why Train with Zell Driving in Liverpool?
               </h2>
-
               <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
                 {whyTrainWithUs.map((item, index) => (
                   <div
@@ -256,28 +290,25 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-                Hear from Our Successful Instructors
+                Hear from Our Successful Liverpool Instructors
               </h2>
-
               <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
                     className="bg-gray-50 border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-lg"
                   >
-                    {/* Stars */}
                     <div className="flex gap-1 mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                        <Star
+                          key={i}
+                          className="w-5 h-5 text-yellow-400 fill-yellow-400"
+                        />
                       ))}
                     </div>
-
-                    {/* Quote */}
                     <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4 italic">
                       "{testimonial.text}"
                     </p>
-
-                    {/* Name */}
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 bg-[#c41e3a] rounded-full flex items-center justify-center">
                         <span className="text-white font-bold">
@@ -285,8 +316,12 @@ export default function InstructorTrainingPage() {
                         </span>
                       </div>
                       <div>
-                        <p className="font-bold text-gray-900">{testimonial.name}</p>
-                        <p className="text-sm text-gray-600">Certified ADI</p>
+                        <p className="font-bold text-gray-900">
+                          {testimonial.name}
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Certified ADI — Liverpool
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -301,11 +336,13 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Ready to start your success story? Contact us today to begin your training!
+                Ready to start your success story in Liverpool? Contact Zell
+                Driving today!
               </h2>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/book-now"
+                  href="/careers
+                  "
                   className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-[#c41e3a] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 >
                   Start Your Training
@@ -315,7 +352,11 @@ export default function InstructorTrainingPage() {
                   href="tel:03333357000"
                   className="inline-flex items-center gap-3 px-8 py-4 bg-transparent hover:bg-white/10 text-white font-bold rounded-full border-2 border-white transition-all duration-300"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                   0333 335 7000
@@ -333,29 +374,36 @@ export default function InstructorTrainingPage() {
                 <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">DVSA Approved</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  DVSA Approved
+                </h3>
                 <p className="text-gray-600 text-sm">
-                  Authorised & regulated by the DVSA for quality training
+                  Authorised & regulated by the DVSA for quality training in
+                  Liverpool
                 </p>
               </div>
-
               <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl">
                 <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Trainers</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Expert Liverpool Trainers
+                </h3>
                 <p className="text-gray-600 text-sm">
-                  Learn from experienced ADIs with proven track records
+                  Learn from experienced Liverpool ADIs with proven track
+                  records
                 </p>
               </div>
-
               <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl">
                 <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Comprehensive Support</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Comprehensive Support
+                </h3>
                 <p className="text-gray-600 text-sm">
-                  Ongoing guidance and resources throughout your journey
+                  Ongoing guidance and resources throughout your Zell Driving
+                  journey
                 </p>
               </div>
             </div>
