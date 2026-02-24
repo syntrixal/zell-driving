@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { HomeBookingForm } from "@/components/bookingfrom";
+import { GoogleReviewsTestimonials } from "@/components/GoogleReviewsTestimonials"; // 👈 import
 
 const containerClass = "px-6 sm:px-8 lg:px-12";
 
@@ -41,6 +42,16 @@ const features = [
     icon: Car,
     title: "Modern Vehicles",
     desc: "Modern vehicles with air conditioning for everybody's comfort.",
+  },
+  {
+    icon: Shield,
+    title: "Automatic Only",
+    desc: "We specialise in automatic driving lessons in Liverpool for a focused, stress-free learning experience.",
+  },
+  {
+    icon: Award,
+    title: "Liverpool Coverage",
+    desc: "Automatic driving school Liverpool – we cover all Liverpool areas and pick you up from your location.",
   },
 ];
 
@@ -75,38 +86,19 @@ const blogs = [
   {
     title:
       "7 Essential Driving Tips Every Beginner Should Know to Build Confidence on the Road",
+    slug: "essential-driving-tips-for-beginners",
     img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&h=400&fit=crop",
   },
   {
     title:
-      "How to Prepare Effectively and Pass Your Driving Test on the First Attempt in Liverpool",
+      "How to Prepare and Pass Your Driving Test on the First Attempt in Liverpool",
+    slug: "how-to-pass-your-driving-test-first-time-liverpool",
     img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=400&fit=crop",
   },
   {
-    title:
-      "Manual vs Automatic Cars: Choosing the Best Vehicle to Learn Driving in the UK",
+    title: "Why Choose Automatic Driving Lessons in Liverpool",
+    slug: "why-choose-automatic-driving-lessons-liverpool",
     img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop",
-  },
-];
-
-const testimonials = [
-  {
-    name: "Sarah Mitchell",
-    rating: 5,
-    text: "Passed first time thanks to Zell Driving! The instructors are patient and professional. Highly recommend!",
-    avatar: "SM",
-  },
-  {
-    name: "James Thompson",
-    rating: 5,
-    text: "Flexible scheduling made it easy to fit lessons around my work. Great value for money and excellent instruction.",
-    avatar: "JT",
-  },
-  {
-    name: "Emma Davies",
-    rating: 5,
-    text: "The best driving school in Liverpool! My instructor was calm, encouraging and helped me build real confidence.",
-    avatar: "ED",
   },
 ];
 
@@ -117,7 +109,6 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#FAFAF9]">
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-32 md:pt-40 md:pb-40 lg:pb-48">
-        {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&h=1080&fit=crop"
@@ -126,8 +117,6 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/70 to-gray-900/60" />
         </div>
-
-        {/* Content */}
         <Container className={`relative z-10 ${containerClass}`}>
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 backdrop-blur-sm">
@@ -137,18 +126,17 @@ export default function HomePage() {
               </span>
             </div>
             <h1 className="mb-6 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-              BEST <span className="text-[#c41e3a]">DRIVING LESSONS</span>
+              BEST <span className="text-[#ae2027]">DRIVING LESSONS</span>
               <br />
               IN LIVERPOOL
             </h1>
             <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg md:text-xl">
-              Learn to drive with Zell Driving, a trusted Liverpool driving
+              Learn to drive with Zell Driving School, a trusted Liverpool driving
               school offering professional driving lessons across Liverpool. Our
               DVSA-approved instructors provide flexible lesson times, patient
               one-to-one tuition, and high first-time pass rates.
             </p>
           </div>
-
           <HomeBookingForm />
         </Container>
       </section>
@@ -163,10 +151,10 @@ export default function HomePage() {
               </span>
               <h2 className="mt-6 mb-6 text-4xl font-black leading-tight sm:text-5xl">
                 A friendly place to learn{" "}
-                <span className="text-[#c41e3a]">Driving</span>
+                <span className="text-[#ae2027]">Driving</span>
               </h2>
               <p className="mb-10 max-w-xl text-lg leading-relaxed text-gray-600">
-                Zell Driving offers professional driving instruction across
+                Zell Driving School offers professional driving instruction across
                 Liverpool and surrounding areas with expert instructors, modern
                 vehicles, and flexible scheduling.
               </p>
@@ -185,9 +173,9 @@ export default function HomePage() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="group flex items-start gap-5 bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl p-6 transition-all duration-300 hover:shadow-xl"
+                    className="group flex items-start gap-5 bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl p-6 transition-all duration-300 hover:shadow-xl"
                   >
-                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-[#c41e3a] group-hover:bg-[#a01830] transition-colors">
+                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-[#ae2027] group-hover:bg-[#8a191f] transition-colors">
                       <item.icon className="h-7 w-7 text-white" />
                     </div>
                     <div>
@@ -219,7 +207,7 @@ export default function HomePage() {
                 ].map((card, i) => (
                   <div
                     key={i}
-                    className="group bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl p-6 sm:p-7 shadow-lg transition-all duration-300 hover:shadow-xl"
+                    className="group bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl p-6 sm:p-7 shadow-lg transition-all duration-300 hover:shadow-xl"
                   >
                     <h3 className="mb-2 font-bold text-base">{card.title}</h3>
                     <p className="text-xs leading-relaxed text-gray-600">
@@ -241,7 +229,7 @@ export default function HomePage() {
               Why Choose Us?
             </span>
             <h2 className="mt-6 mb-6 text-4xl font-black leading-tight sm:text-5xl">
-              Why Choose <span className="text-[#c41e3a]">Zell Driving</span>?
+              Why Choose <span className="text-[#ae2027]">Zell Driving School</span>?
             </h2>
             <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600">
               Professional instruction, flexible scheduling, and a learning
@@ -249,16 +237,16 @@ export default function HomePage() {
               Liverpool.
             </p>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {features.map((feature, i) => {
               const Icon = feature.icon;
               return (
                 <div
                   key={i}
-                  className="group text-center bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-3xl p-8 transition-all duration-300 hover:shadow-xl"
+                  className="group text-center bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-3xl p-8 transition-all duration-300 hover:shadow-xl"
                   onMouseEnter={() => setActiveFeature(i)}
                 >
-                  <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#c41e3a] group-hover:bg-[#a01830] transition-colors">
+                  <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#ae2027] group-hover:bg-[#8a191f] transition-colors">
                     <Icon className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="mb-3 font-bold text-lg">{feature.title}</h3>
@@ -273,11 +261,11 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#c41e3a] py-20 md:py-24">
+      <section className="bg-[#ae2027] py-20 md:py-24">
         <Container className={containerClass}>
           <div className="max-w-5xl mx-auto text-center text-white">
             <h2 className="mb-6 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
-              Get Started with Zell Driving
+              Get Started with Zell Driving School
             </h2>
             <p className="mb-10 text-base leading-relaxed text-white/90 sm:text-lg lg:text-xl max-w-3xl mx-auto">
               Start your driving journey today with professional instruction,
@@ -286,19 +274,17 @@ export default function HomePage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/book-now"
-                className="inline-flex items-center gap-3 px-10 py-4 bg-white hover:bg-gray-100 text-[#c41e3a] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-base"
+                className="inline-flex items-center gap-3 px-10 py-4 bg-white hover:bg-gray-100 text-[#ae2027] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-base"
               >
                 Get Started
               </Link>
               <Link
                 href="/driving-lessons/prices"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-transparent px-10 py-4 text-base font-bold text-white transition hover:bg-white hover:text-[#c41e3a]"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-transparent px-10 py-4 text-base font-bold text-white transition hover:bg-white hover:text-[#ae2027]"
               >
                 View Prices
               </Link>
             </div>
-
-            {/* Tags */}
             <div className="mt-12 flex flex-wrap justify-center gap-4">
               {[
                 "Liverpool Driving School",
@@ -315,8 +301,6 @@ export default function HomePage() {
                 </span>
               ))}
             </div>
-
-            {/* Contact */}
             <div className="mt-8 flex items-center justify-center gap-3 text-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
                 <svg
@@ -350,7 +334,7 @@ export default function HomePage() {
             </span>
             <h2 className="mt-6 mb-6 text-4xl font-black leading-tight sm:text-5xl">
               Features that build{" "}
-              <span className="text-[#c41e3a]">confidence</span>
+              <span className="text-[#ae2027]">confidence</span>
             </h2>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600">
               Our certified Liverpool programs are designed to provide
@@ -364,13 +348,13 @@ export default function HomePage() {
               return (
                 <div
                   key={i}
-                  className="group bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-3xl p-8 shadow-lg lg:p-10 transition-all duration-300 hover:shadow-xl"
+                  className="group bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-3xl p-8 shadow-lg lg:p-10 transition-all duration-300 hover:shadow-xl"
                 >
-                  <div className="mb-5 flex items-center gap-2 text-xs font-bold text-[#c41e3a]">
-                    <span className="h-2 w-2 rounded-full bg-[#c41e3a]" />
+                  <div className="mb-5 flex items-center gap-2 text-xs font-bold text-[#ae2027]">
+                    <span className="h-2 w-2 rounded-full bg-[#ae2027]" />
                     Our Driving Features
                   </div>
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#c41e3a] group-hover:bg-[#a01830] transition-colors">
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ae2027] group-hover:bg-[#8a191f] transition-colors">
                     <Icon className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="mb-3 font-bold text-lg">{feature.title}</h3>
@@ -383,7 +367,7 @@ export default function HomePage() {
                         key={j}
                         className="flex items-start gap-2 text-xs text-gray-600"
                       >
-                        <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#c41e3a]" />
+                        <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#ae2027]" />
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -395,53 +379,8 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-white py-20 md:py-24">
-        <Container className={containerClass}>
-          <div className="mb-20 text-center">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200">
-              Testimonials
-            </span>
-            <h2 className="mt-6 mb-6 text-4xl font-black leading-tight sm:text-5xl">
-              What our <span className="text-[#c41e3a]">students say</span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Real reviews from real Liverpool students
-            </p>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-            {testimonials.map((testimonial, i) => (
-              <div
-                key={i}
-                className="bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-3xl p-8 transition-all duration-300 hover:shadow-xl lg:p-10"
-              >
-                <div className="mb-4 flex items-center gap-1">
-                  {[...Array(testimonial.rating)].map((_, j) => (
-                    <Star
-                      key={j}
-                      className="h-5 w-5 fill-yellow-400 text-yellow-400"
-                    />
-                  ))}
-                </div>
-                <p className="mb-6 leading-relaxed text-gray-700">
-                  &quot;{testimonial.text}&quot;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#c41e3a] font-black text-white">
-                    {testimonial.avatar}
-                  </div>
-                  <div>
-                    <div className="font-bold">{testimonial.name}</div>
-                    <div className="text-sm text-gray-500">
-                      Verified Student — Liverpool
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+      {/* ✅ Google Reviews Testimonials - replaces hardcoded section */}
+      <GoogleReviewsTestimonials />
 
       {/* Blog */}
       <section className="bg-gray-50 py-20 md:py-24">
@@ -458,7 +397,7 @@ export default function HomePage() {
             {blogs.map((blog, i) => (
               <article
                 key={i}
-                className="group overflow-hidden rounded-3xl border-2 border-gray-200 hover:border-[#c41e3a] bg-white shadow-lg transition-all duration-300 hover:shadow-xl"
+                className="group overflow-hidden rounded-3xl border-2 border-gray-200 hover:border-[#ae2027] bg-white shadow-lg transition-all duration-300 hover:shadow-xl"
               >
                 <img
                   src={blog.img}
@@ -470,8 +409,8 @@ export default function HomePage() {
                     {blog.title}
                   </h3>
                   <Link
-                    href="/blogs"
-                    className="flex items-center gap-2 text-sm font-bold text-[#c41e3a] transition hover:text-[#a01830]"
+                    href={`/blogs/${blog.slug}`}
+                    className="flex items-center gap-2 text-sm font-bold text-[#ae2027] transition hover:text-[#8a191f]"
                   >
                     Read More <ArrowRight className="h-4 w-4" />
                   </Link>

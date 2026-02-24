@@ -166,7 +166,7 @@ export default function VideosPage() {
                     {/* Video Info */}
                     <div className="p-6 sm:p-8">
                       <div className="flex items-center gap-2 mb-4">
-                        <div className="px-3 py-1 bg-[#c41e3a] text-white text-xs font-bold rounded-full">
+                        <div className="px-3 py-1 bg-[#ae2027] text-white text-xs font-bold rounded-full">
                           {currentCategory?.title}
                         </div>
                         <div className="flex items-center gap-1 text-gray-600 text-sm">
@@ -203,7 +203,7 @@ export default function VideosPage() {
                           onClick={() => setCurrentVideo(video)}
                           className={`group cursor-pointer rounded-xl overflow-hidden transition-all duration-300 ${
                             currentVideo.videoId === video.videoId
-                              ? 'ring-2 ring-[#c41e3a]'
+                              ? 'ring-2 ring-[#ae2027]'
                               : 'hover:ring-2 hover:ring-gray-300'
                           }`}
                         >
@@ -261,12 +261,12 @@ export default function VideosPage() {
                       }}
                       className={`p-6 rounded-2xl border-2 transition-all duration-300 ${
                         selectedCategory === category.id
-                          ? 'bg-[#c41e3a] border-[#c41e3a] text-white shadow-lg'
-                          : 'bg-white border-gray-200 text-gray-900 hover:border-[#c41e3a]'
+                          ? 'bg-[#ae2027] border-[#ae2027] text-white shadow-lg'
+                          : 'bg-white border-gray-200 text-gray-900 hover:border-[#ae2027]'
                       }`}
                     >
                       <Icon className={`w-8 h-8 mx-auto mb-3 ${
-                        selectedCategory === category.id ? 'text-white' : 'text-[#c41e3a]'
+                        selectedCategory === category.id ? 'text-white' : 'text-[#ae2027]'
                       }`} />
                       <h4 className="font-bold text-sm sm:text-base text-center">
                         {category.title}
@@ -290,7 +290,7 @@ export default function VideosPage() {
                       setCurrentVideo(video);
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
-                    className="group cursor-pointer bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+                    className="group cursor-pointer bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl"
                   >
                     <div className="relative aspect-video bg-gray-200">
                       <img
@@ -299,8 +299,8 @@ export default function VideosPage() {
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 flex items-center justify-center transition-all duration-300">
-                        <div className="w-16 h-16 bg-[#c41e3a] group-hover:bg-white rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
-                          <Play className="w-8 h-8 text-white group-hover:text-[#c41e3a] ml-1" />
+                        <div className="w-16 h-16 bg-[#ae2027] group-hover:bg-white rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
+                          <Play className="w-8 h-8 text-white group-hover:text-[#ae2027] ml-1" />
                         </div>
                       </div>
                       <div className="absolute bottom-3 right-3 bg-black/80 text-white text-sm px-2 py-1 rounded">
@@ -332,7 +332,7 @@ export default function VideosPage() {
 
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                     <Video className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-3">
@@ -344,7 +344,7 @@ export default function VideosPage() {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                     <Clock className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-3">
@@ -356,7 +356,7 @@ export default function VideosPage() {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                     <CheckCircle className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-3">
@@ -383,7 +383,7 @@ export default function VideosPage() {
               </p>
               <a
                 href="/book-now"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Book Your First Lesson
                 <Play className="h-5 w-5" />

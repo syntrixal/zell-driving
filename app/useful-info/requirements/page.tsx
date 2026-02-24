@@ -182,7 +182,7 @@ export default function RequirementsPage() {
                 href="https://www.gov.uk/apply-first-provisional-driving-licence"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300 mb-8"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300 mb-8"
               >
                 Apply Online from Gov.UK
                 <ExternalLink className="w-5 h-5" />
@@ -235,7 +235,7 @@ export default function RequirementsPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Theory Test Overview</h3>
               <p className="text-gray-700 mb-6">
                 You may already be taking lessons or even be ready to take your practical test but{" "}
-                <strong className="text-[#c41e3a]">you can not apply for your practical test until you have passed the theory test</strong>.
+                <strong className="text-[#ae2027]">you can not apply for your practical test until you have passed the theory test</strong>.
               </p>
 
               <div className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-2xl p-6 mb-6">
@@ -315,7 +315,7 @@ export default function RequirementsPage() {
                   href="https://www.gov.uk/find-theory-test-centre"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300"
                 >
                   Find Theory Test Centre
                   <ExternalLink className="w-5 h-5" />
@@ -477,7 +477,7 @@ export default function RequirementsPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/book-now"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300"
                 >
                   Book Your Practical Test
                   <Calendar className="w-5 h-5" />
@@ -533,7 +533,7 @@ export default function RequirementsPage() {
 
               <Link
                 href="/book-now"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#c41e3a] to-[#a01830] hover:from-[#a01830] hover:to-[#c41e3a] text-white font-bold rounded-full transition-all duration-300 shadow-xl hover:scale-105"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#ae2027] to-[#8a191f] hover:from-[#8a191f] hover:to-[#ae2027] text-white font-bold rounded-full transition-all duration-300 shadow-xl hover:scale-105"
               >
                 Start Your Journey Today
                 <ArrowRight className="w-6 h-6" />
@@ -551,7 +551,7 @@ export default function RequirementsPage() {
     <PageShell title="Getting Your Licence" intro="Your complete guide to becoming a qualified driver">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-[#c41e3a] to-gray-900">
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-[#ae2027] to-gray-900">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
@@ -610,7 +610,7 @@ export default function RequirementsPage() {
                       onClick={() => setActiveStep(step.id)}
                       className={`relative p-4 rounded-2xl border-2 transition-all duration-300 ${
                         isActive
-                          ? 'bg-white border-[#c41e3a] shadow-xl scale-105'
+                          ? 'bg-white border-[#ae2027] shadow-xl scale-105'
                           : 'bg-white border-gray-200 hover:border-gray-300 hover:shadow-lg'
                       }`}
                     >
@@ -618,7 +618,7 @@ export default function RequirementsPage() {
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                       <div className="text-center">
-                        <div className={`text-xs font-bold mb-1 ${isActive ? 'text-[#c41e3a]' : 'text-gray-500'}`}>
+                        <div className={`text-xs font-bold mb-1 ${isActive ? 'text-[#ae2027]' : 'text-gray-500'}`}>
                           Step {index + 1}
                         </div>
                         <h3 className={`text-sm font-bold mb-1 ${isActive ? 'text-gray-900' : 'text-gray-700'}`}>
@@ -630,7 +630,7 @@ export default function RequirementsPage() {
                       </div>
                       {isActive && (
                         <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
-                          <div className="w-8 h-8 bg-[#c41e3a] rounded-full flex items-center justify-center">
+                          <div className="w-8 h-8 bg-[#ae2027] rounded-full flex items-center justify-center">
                             <CheckCircle className="w-5 h-5 text-white" />
                           </div>
                         </div>
@@ -675,7 +675,7 @@ export default function RequirementsPage() {
                     }
                   }}
                   disabled={activeStep === journeySteps[journeySteps.length - 1].id}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Next
                   <ChevronRight className="w-5 h-5" />
@@ -686,7 +686,7 @@ export default function RequirementsPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 sm:py-20 bg-gradient-to-r from-gray-900 to-[#c41e3a] text-white">
+        <section className="py-16 sm:py-20 bg-gradient-to-r from-gray-900 to-[#ae2027] text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <Zap className="w-16 h-16 mx-auto mb-6 text-yellow-400" />

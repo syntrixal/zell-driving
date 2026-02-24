@@ -7,7 +7,7 @@ export default function AreasPage() {
 
   return (
     <>
-      <PageShell title={content.title} intro={content.intro} />
+      <PageShell title={content.title} intro={content.intro} compactHero />
       <AreasCarousel />
     </>
   );

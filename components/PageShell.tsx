@@ -9,20 +9,21 @@ type Props = {
   intro: string;
   sections?: { title: string; body: string }[];
   children?: React.ReactNode;
+  compactHero?: boolean;
 };
 
-export function PageShell({ title, intro, sections, children }: Props) {
+export function PageShell({ title, intro, sections, children, compactHero }: Props) {
   const hasSections = Boolean(sections && sections.length > 0);
 
   return (
     <div className="min-h-screen bg-[#FAFAF9] pt-10">
-      <section className="bg-white py-20 md:py-24">
+      <section className={`bg-white ${compactHero ? "py-12 md:py-16 pb-8 md:pb-10" : "py-20 md:py-24"}`}>
         <Container className="max-w-4xl px-6 sm:px-8 lg:px-12">
-          <span className="inline-block rounded-full border-2 border-gray-200 bg-white px-5 py-2 text-xs font-semibold uppercase tracking-wider text-gray-600">
-            {title.toUpperCase()}
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200">
+            {title}
           </span>
           <h1
-            className="mt-8 text-4xl font-black leading-tight gradient-text sm:text-5xl lg:text-6xl"
+            className="mt-8 text-4xl font-black leading-tight text-[#ae2027] sm:text-5xl lg:text-6xl"
             style={{ fontFamily: "'Archivo Black', sans-serif" }}
           >
             {title}

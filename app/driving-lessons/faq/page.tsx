@@ -92,17 +92,17 @@ export default function FaqPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">
-                Why choose Drive4Pass Driving School over another school?
+                Why choose Zell Driving School over another school?
               </h2>
 
               <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                 {whyChooseReasons.map((reason, index) => (
                   <div
                     key={index}
-                    className="group flex items-start gap-4 p-4 sm:p-6 bg-gray-50 hover:bg-white border-2 border-gray-100 hover:border-[#c41e3a] rounded-xl transition-all duration-300 hover:shadow-lg"
+                    className="group flex items-start gap-4 p-4 sm:p-6 bg-gray-50 hover:bg-white border-2 border-gray-100 hover:border-[#ae2027] rounded-xl transition-all duration-300 hover:shadow-lg"
                   >
                     {/* Check Icon */}
-                    <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-[#c41e3a] group-hover:bg-[#a01830] rounded-lg flex items-center justify-center transition-colors duration-300">
+                    <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-[#ae2027] group-hover:bg-[#8a191f] rounded-lg flex items-center justify-center transition-colors duration-300">
                       <CheckCircle className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                     </div>
 
@@ -160,7 +160,7 @@ export default function FaqPage() {
                 {faqItems.map((faq) => (
                   <div
                     key={faq.id}
-                    className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:border-[#c41e3a]"
+                    className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:border-[#ae2027]"
                   >
                     {/* Question Button */}
                     <button
@@ -169,7 +169,7 @@ export default function FaqPage() {
                     >
                       <div className="flex items-center gap-3 sm:gap-4 flex-1">
                         <div className={`flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-colors duration-300 ${
-                          openFaqId === faq.id ? 'bg-[#c41e3a]' : 'bg-gray-200'
+                          openFaqId === faq.id ? 'bg-[#ae2027]' : 'bg-gray-200'
                         }`}>
                           <Info className={`w-4 h-4 sm:w-5 sm:h-5 transition-colors duration-300 ${
                             openFaqId === faq.id ? 'text-white' : 'text-gray-600'
@@ -180,7 +180,7 @@ export default function FaqPage() {
                         </h3>
                       </div>
                       <ChevronDown
-                        className={`w-5 h-5 sm:w-6 sm:h-6 text-[#c41e3a] flex-shrink-0 transition-transform duration-300 ${
+                        className={`w-5 h-5 sm:w-6 sm:h-6 text-[#ae2027] flex-shrink-0 transition-transform duration-300 ${
                           openFaqId === faq.id ? 'rotate-180' : ''
                         }`}
                       />
@@ -218,16 +218,16 @@ export default function FaqPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
                   href="/book-now"
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#c41e3a]/30 hover:scale-105"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#ae2027]/30 hover:scale-105"
                 >
                   Contact Us
                   <ArrowRight className="h-5 w-5" />
                 </Link>
                 <a
                   href="tel:03333357000"
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-full border-2 border-gray-300 hover:border-[#c41e3a] transition-all duration-300"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-full border-2 border-gray-300 hover:border-[#ae2027] transition-all duration-300"
                 >
-                  <svg className="w-5 h-5 text-[#c41e3a]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#ae2027]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                   0333 335 7000
@@ -241,8 +241,8 @@ export default function FaqPage() {
         <section className="py-12 sm:py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl border-2 border-gray-200 hover:border-[#c41e3a] transition-all duration-300">
-                <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl border-2 border-gray-200 hover:border-[#ae2027] transition-all duration-300">
+                <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -253,8 +253,8 @@ export default function FaqPage() {
                 </p>
               </div>
 
-              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl border-2 border-gray-200 hover:border-[#c41e3a] transition-all duration-300">
-                <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl border-2 border-gray-200 hover:border-[#ae2027] transition-all duration-300">
+                <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -265,8 +265,8 @@ export default function FaqPage() {
                 </p>
               </div>
 
-              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl border-2 border-gray-200 hover:border-[#c41e3a] transition-all duration-300">
-                <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl border-2 border-gray-200 hover:border-[#ae2027] transition-all duration-300">
+                <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>

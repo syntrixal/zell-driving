@@ -29,13 +29,13 @@ export function AreasCarousel() {
   const extendedAreas = [...COVERAGE_AREAS, ...COVERAGE_AREAS, ...COVERAGE_AREAS];
 
   return (
-    <section className="py-8 sm:py-15 bg-white overflow-hidden">
+    <section className="pt-6 pb-8 sm:pt-8 sm:pb-12 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 max-w-4xl mx-auto">
           <div className="inline-block mb-4">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200">
-              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#c41e3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#ae2027]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
@@ -44,15 +44,15 @@ export function AreasCarousel() {
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
             Serving Communities Across
-            <span className="block text-[#c41e3a]">
-              Greater Manchester
+            <span className="block text-[#ae2027]">
+              Liverpool
             </span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We cover a wide area throughout Greater Manchester as well as Blackburn, Birmingham, Warrington & St Helens
+            We cover Liverpool and surrounding areas with automatic driving lessons.
           </p>
           <p className="text-xs sm:text-sm text-gray-500 mt-3 sm:mt-4 italic">
-            Please note: Manual lessons are only available in certain locations and slot availability is limited
+            Automatic driving lessons across Liverpool and surrounding areas.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export function AreasCarousel() {
                   key={`${area}-${index}`}
                   className="group relative flex-shrink-0"
                 >
-                  <div className="relative px-4 sm:px-6 py-3 sm:py-4 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 hover:border-[#c41e3a] hover:bg-[#c41e3a] transition-all duration-300 hover:shadow-lg hover:shadow-[#c41e3a]/20 hover:scale-105 cursor-pointer">
+                  <div className="relative px-4 sm:px-6 py-3 sm:py-4 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 hover:border-[#ae2027] hover:bg-[#ae2027] transition-all duration-300 hover:shadow-lg hover:shadow-[#ae2027]/20 hover:scale-105 cursor-pointer">
                     {/* Area name */}
                     <span className="relative text-gray-900 group-hover:text-white font-semibold text-sm sm:text-base whitespace-nowrap transition-colors duration-300">
                       {area}
@@ -88,7 +88,7 @@ export function AreasCarousel() {
                     {/* Location pin icon on hover */}
                     <div className="absolute -top-1.5 -right-1.5 sm:-top-2 sm:-right-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-0">
                       <div className="bg-white rounded-full p-1 sm:p-1.5 shadow-lg">
-                        <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#ae2027]" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                         </svg>
                       </div>
@@ -117,19 +117,19 @@ export function AreasCarousel() {
         {/* Stats Section - Mobile responsive grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto mb-8 sm:mb-12">
           <div className="text-center p-4 sm:p-6 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200">
-            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#c41e3a] mb-1 sm:mb-2">140+</div>
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ae2027] mb-1 sm:mb-2">140+</div>
             <div className="text-xs sm:text-sm text-gray-600">Areas Covered</div>
           </div>
           <div className="text-center p-4 sm:p-6 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200">
-            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#c41e3a] mb-1 sm:mb-2">4</div>
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ae2027] mb-1 sm:mb-2">4</div>
             <div className="text-xs sm:text-sm text-gray-600">Major Cities</div>
           </div>
           <div className="text-center p-4 sm:p-6 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200">
-            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#c41e3a] mb-1 sm:mb-2">100%</div>
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ae2027] mb-1 sm:mb-2">100%</div>
             <div className="text-xs sm:text-sm text-gray-600">Coverage</div>
           </div>
           <div className="text-center p-4 sm:p-6 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200">
-            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#c41e3a] mb-1 sm:mb-2">24/7</div>
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ae2027] mb-1 sm:mb-2">24/7</div>
             <div className="text-xs sm:text-sm text-gray-600">Support</div>
           </div>
         </div>
@@ -138,7 +138,7 @@ export function AreasCarousel() {
         <div className="text-center">
           <a 
             href="/book-now"
-            className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white text-sm sm:text-base font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#c41e3a]/30 hover:scale-105"
+            className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white text-sm sm:text-base font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#ae2027]/30 hover:scale-105"
           >
             Find Your Local Instructor
             <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -159,7 +159,7 @@ export function AreasCarousel() {
         }
 
         .animate-scroll {
-          animation: scroll 90s linear infinite;
+          animation: scroll 150s linear infinite;
         }
 
         .animate-scroll:hover {

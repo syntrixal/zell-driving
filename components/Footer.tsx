@@ -61,7 +61,7 @@ export function Footer() {
                   <li key={l.label}>
                     <Link
                       href={l.href}
-                      className="transition hover:text-[#FFD60A]"
+                      className="transition hover:text-[#ae2027]"
                     >
                       {l.label}
                     </Link>

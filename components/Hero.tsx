@@ -21,7 +21,7 @@ export function Hero({ title, subtitle }: Props) {
           <div className="mb-4 inline-flex items-center rounded-full bg-white/80 px-4 py-1 text-xs font-semibold text-gray-800 shadow">
             Learn Driving With Confidence &amp; Safety
           </div>
-          <p className="text-xs font-semibold tracking-[0.22em] text-red-300">
+          <p className="text-xs font-semibold tracking-[0.22em] text-[#ae2027]/90">
             PROFESSIONAL DRIVING
           </p>
           <h1 className="mt-3 max-w-3xl text-3xl font-bold leading-snug sm:text-4xl md:text-5xl">

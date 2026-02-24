@@ -1,82 +1,42 @@
 "use client";
 
 import * as React from "react";
-import { sendEmail } from "@/lib/emailService";
 
-// ─── WhatsApp Business API Config ─────────────────────────────────────────
-// Replace these with your real values from Meta Business Manager
-const WHATSAPP_PHONE_NUMBER_ID = "YOUR_PHONE_NUMBER_ID"; // e.g. "123456789012345"
-const WHATSAPP_ACCESS_TOKEN = "YOUR_ACCESS_TOKEN"; // e.g. "EAABx..."
-const WHATSAPP_TO_NUMBER = "7585726191"; // Your WhatsApp Business number
+const WHATSAPP_NUMBER = "447440344154";
 
-async function sendWhatsAppMessage(message: string) {
-  const response = await fetch(
-    `https://graph.facebook.com/v19.0/${WHATSAPP_PHONE_NUMBER_ID}/messages`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${WHATSAPP_ACCESS_TOKEN}`,
-      },
-      body: JSON.stringify({
-        messaging_product: "whatsapp",
-        to: WHATSAPP_TO_NUMBER,
-        type: "text",
-        text: { body: message },
-      }),
-    },
-  );
-
-  if (!response.ok) {
-    const err = await response.json();
-    throw new Error(err?.error?.message || "WhatsApp API error");
+function buildWhatsAppMessage(state: FormState, isBookNowForm: boolean): string {
+  if (isBookNowForm && state.enquiryType === "Lessons") {
+    return [
+      "Hello Zell Driving School, I would like to book automatic driving lessons in Liverpool.",
+      "",
+      `Name: ${state.firstName} ${state.surname}`,
+      `Email: ${state.email}`,
+      `Phone: ${state.telephone}`,
+      `Postcode: ${state.postcode || "Not specified"}`,
+      `Enquiry Type: ${state.enquiryType}`,
+      state.previousLessons ? `Previous Lessons: ${state.previousLessons}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
   }
 
-  return response.json();
-}
-
-function buildWhatsAppMessage(state: FormState): string {
-  const lines: string[] = [
-    `📋 *New Enquiry — ${state.enquiryType}*`,
-    ``,
-    `👤 *Name:* ${state.firstName} ${state.surname}`,
-    `📧 *Email:* ${state.email}`,
-    `📞 *Tel:* ${state.telephone}`,
-    `📍 *Postcode:* ${state.postcode || "N/A"}`,
-  ];
-
-  if (state.enquiryType === "Lessons") {
-    lines.push(`🎓 *Previous Lessons:* ${state.previousLessons || "N/A"}`);
-    lines.push(`🚗 *Transmission:* ${state.transmissionType || "N/A"}`);
-  }
-
-  if (state.enquiryType === "Intensives") {
-    lines.push(`🎓 *Previous Lessons:* ${state.previousLessons || "N/A"}`);
-    lines.push(`📚 *Course Interest:* ${state.courseInterest || "Not sure"}`);
-    lines.push(`🚗 *Transmission:* ${state.transmissionType || "N/A"}`);
-  }
-
-  if (state.enquiryType === "ADI Training") {
-    lines.push(`🪪 *PDI or ADI:* ${state.pdiOrAdi?.toUpperCase() || "N/A"}`);
-    lines.push(`🎓 *Previous Training:* ${state.previousTraining || "N/A"}`);
-    lines.push(`🏢 *Current Franchise:* ${state.currentFranchise || "N/A"}`);
-  }
-
-  if (state.enquiryType === "Franchise") {
-    lines.push(`🪪 *PDI or ADI:* ${state.pdiOrAdi?.toUpperCase() || "N/A"}`);
-    lines.push(`🏢 *Current Franchise:* ${state.currentFranchise || "N/A"}`);
-  }
-
-  if (state.enquiryType === "Instructor Application") {
-    lines.push(`🪪 *Licence Type:* ${state.licenceType || "N/A"}`);
-    lines.push(`📝 *Experience:* ${state.experience || "N/A"}`);
-  }
-
-  if (state.message) {
-    lines.push(``, `💬 *Message:* ${state.message}`);
-  }
-
-  return lines.join("\n");
+  return [
+    "Hello Zell Driving School, I have an enquiry.",
+    "",
+    `Name: ${state.firstName} ${state.surname}`,
+    `Email: ${state.email}`,
+    state.telephone ? `Phone: ${state.telephone}` : "",
+    state.postcode ? `Postcode: ${state.postcode}` : "",
+    state.message ? `Message: ${state.message}` : "",
+    state.enquiryType === "Instructor Application" && state.licenceType
+      ? `Licence Type: ${state.licenceType}`
+      : "",
+    state.enquiryType === "Instructor Application" && state.experience
+      ? `Experience: ${state.experience}`
+      : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
 }
 
 // ─── Types ─────────────────────────────────────────────────────────────────
@@ -151,60 +111,19 @@ type Props = {
 export function EnquiryForm({ allowedTabs }: Props = {}) {
   const [state, setState] = React.useState<FormState>(initialState);
   const [submitting, setSubmitting] = React.useState(false);
-  const [status, setStatus] = React.useState<"idle" | "success" | "error">(
-    "idle",
-  );
-  const [statusMessage, setStatusMessage] = React.useState<string | null>(null);
 
   function update<K extends keyof FormState>(key: K, value: FormState[K]) {
     setState((s) => ({ ...s, [key]: value }));
   }
 
-  async function onSubmit(e: React.FormEvent) {
+  function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setSubmitting(true);
-    setStatus("idle");
-    setStatusMessage(null);
-
-    try {
-      // Send email
-      await sendEmail({
-        first_name: state.firstName,
-        last_name: state.surname,
-        email: state.email,
-        telephone: state.telephone,
-        postcode: state.postcode,
-        enquiry_type: state.enquiryType,
-        previous_lessons: state.previousLessons,
-        transmission_type: state.transmissionType,
-        message: state.message,
-        course_interest: state.courseInterest,
-        pdi_or_adi: state.pdiOrAdi,
-        previous_training: state.previousTraining,
-        current_franchise: state.currentFranchise,
-        licence_type: state.licenceType,
-        experience: state.experience,
-      } as any);
-
-      // Send WhatsApp message
-      await sendWhatsAppMessage(buildWhatsAppMessage(state));
-
-      setStatus("success");
-      setStatusMessage(
-        state.enquiryType === "Instructor Application"
-          ? "Thank you. Your application has been submitted successfully."
-          : "Thank you. Your enquiry has been sent successfully. We'll get back to you as soon as possible.",
-      );
-      setState(initialState);
-    } catch (err) {
-      console.error("[EnquiryForm] Failed to send", err);
-      setStatus("error");
-      setStatusMessage(
-        "Sorry, something went wrong. Please try again or call us directly.",
-      );
-    } finally {
-      setSubmitting(false);
-    }
+    const isBookNowForm = allowedTabs?.includes("Lessons") && allowedTabs?.length === 1;
+    const message = buildWhatsAppMessage(state, !!isBookNowForm);
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.location.href = url;
+    setSubmitting(false);
   }
 
   const allTabs: { id: EnquiryType; label: string }[] = [
@@ -228,10 +147,10 @@ export function EnquiryForm({ allowedTabs }: Props = {}) {
   }, []);
 
   const inputClass =
-    "w-full h-12 px-4 bg-white border border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#c41e3a] focus:border-transparent transition-all";
+    "w-full h-12 px-4 bg-white border border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#ae2027] focus:border-transparent transition-all";
 
   const selectClass =
-    "w-full h-12 px-4 bg-white border border-gray-300 rounded-lg text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#c41e3a] focus:border-transparent transition-all";
+    "w-full h-12 px-4 bg-white border border-gray-300 rounded-lg text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#ae2027] focus:border-transparent transition-all";
 
   const labelClass = "block text-sm font-medium text-gray-700 mb-2";
 
@@ -247,7 +166,7 @@ export function EnquiryForm({ allowedTabs }: Props = {}) {
               onClick={() => update("enquiryType", tab.id)}
               className={`flex-1 min-w-[100px] px-4 py-4 text-sm font-semibold transition-all duration-200 ${
                 state.enquiryType === tab.id
-                  ? "bg-[#c41e3a] text-white"
+                  ? "bg-[#ae2027] text-white"
                   : "bg-white text-gray-700 hover:bg-gray-50"
               }`}
             >
@@ -331,24 +250,14 @@ export function EnquiryForm({ allowedTabs }: Props = {}) {
               </div>
               <div>
                 <label className={labelClass}>
-                  Do you want auto or manual? Please note, Manual lessons
-                  available in Atherton, Bolton &amp; Oldham ONLY
+                  We offer automatic driving lessons only in Liverpool.
                 </label>
-                <select
-                  value={state.transmissionType}
-                  onChange={(e) =>
-                    update(
-                      "transmissionType",
-                      e.target.value as TransmissionType,
-                    )
-                  }
-                  required
-                  className={selectClass}
-                >
-                  <option value="">-- PLEASE SELECT --</option>
-                  <option value="automatic">Automatic</option>
-                  <option value="manual">Manual</option>
-                </select>
+                <input
+                  type="text"
+                  readOnly
+                  value="Automatic"
+                  className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-lg text-gray-700 text-sm"
+                />
               </div>
             </>
           )}
@@ -399,22 +308,13 @@ export function EnquiryForm({ allowedTabs }: Props = {}) {
                 </select>
               </div>
               <div>
-                <label className={labelClass}>Auto or manual?</label>
-                <select
-                  value={state.transmissionType}
-                  onChange={(e) =>
-                    update(
-                      "transmissionType",
-                      e.target.value as TransmissionType,
-                    )
-                  }
-                  required
-                  className={selectClass}
-                >
-                  <option value="">-- PLEASE SELECT --</option>
-                  <option value="automatic">Automatic</option>
-                  <option value="manual">Manual</option>
-                </select>
+                <label className={labelClass}>Transmission</label>
+                <input
+                  type="text"
+                  readOnly
+                  value="Automatic"
+                  className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-lg text-gray-700 text-sm"
+                />
               </div>
             </>
           )}
@@ -570,7 +470,7 @@ export function EnquiryForm({ allowedTabs }: Props = {}) {
               onChange={(e) => update("message", e.target.value)}
               placeholder="Message"
               rows={4}
-              className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#c41e3a] focus:border-transparent transition-all resize-none"
+              className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#ae2027] focus:border-transparent transition-all resize-none"
             />
           </div>
 
@@ -579,7 +479,7 @@ export function EnquiryForm({ allowedTabs }: Props = {}) {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed text-base"
+              className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed text-base"
             >
               {submitting ? (
                 <span className="flex items-center justify-center gap-2">
@@ -599,7 +499,7 @@ export function EnquiryForm({ allowedTabs }: Props = {}) {
                       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                     />
                   </svg>
-                  Sending...
+                  Opening WhatsApp...
                 </span>
               ) : state.enquiryType === "Instructor Application" ? (
                 "APPLY NOW"
@@ -609,14 +509,6 @@ export function EnquiryForm({ allowedTabs }: Props = {}) {
             </button>
           </div>
 
-          {/* Status Message */}
-          {status !== "idle" && statusMessage && (
-            <div
-              className={`p-4 rounded-lg text-sm text-center ${status === "success" ? "bg-green-50 text-green-800 border border-green-200" : "bg-red-50 text-red-800 border border-red-200"}`}
-            >
-              <p className="font-medium">{statusMessage}</p>
-            </div>
-          )}
         </form>
       </div>
     </section>

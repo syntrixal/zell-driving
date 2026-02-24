@@ -148,7 +148,7 @@ export default function IntensivesPage() {
                         placeholder="First name"
                         value={formData.firstName}
                         onChange={(e) => setFormData({...formData, firstName: e.target.value})}
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                         required
                       />
                       <input
@@ -156,7 +156,7 @@ export default function IntensivesPage() {
                         placeholder="Surname"
                         value={formData.surname}
                         onChange={(e) => setFormData({...formData, surname: e.target.value})}
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                         required
                       />
                     </div>
@@ -166,7 +166,7 @@ export default function IntensivesPage() {
                       placeholder="Email"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                       required
                     />
 
@@ -175,7 +175,7 @@ export default function IntensivesPage() {
                       placeholder="Phone"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                       required
                     />
 
@@ -184,14 +184,14 @@ export default function IntensivesPage() {
                       placeholder="Postcode"
                       value={formData.postcode}
                       onChange={(e) => setFormData({...formData, postcode: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                       required
                     />
 
                     <select
                       value={formData.experience}
                       onChange={(e) => setFormData({...formData, experience: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors bg-white"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors bg-white"
                       required
                     >
                       <option value="">- DRIVING LESSONS -</option>
@@ -203,7 +203,7 @@ export default function IntensivesPage() {
                     <select
                       value={formData.courseType}
                       onChange={(e) => setFormData({...formData, courseType: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors bg-white"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors bg-white"
                       required
                     >
                       <option value="">- AREAS INTEREST -</option>
@@ -217,12 +217,12 @@ export default function IntensivesPage() {
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       rows={4}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors resize-none"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors resize-none"
                     />
 
                     <button
                       type="submit"
-                      className="w-full bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                      className="w-full bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                     >
                       <span>INTENSIVES ENQUIRY</span>
                       <ArrowRight className="h-5 w-5" />
@@ -230,8 +230,8 @@ export default function IntensivesPage() {
 
                     <p className="text-xs text-gray-600 text-center">
                       Protected by reCAPTCHA and the Google{" "}
-                      <a href="#" className="text-[#c41e3a] hover:underline">Privacy Policy</a> and{" "}
-                      <a href="#" className="text-[#c41e3a] hover:underline">Terms of Service</a> apply.
+                      <a href="#" className="text-[#ae2027] hover:underline">Privacy Policy</a> and{" "}
+                      <a href="#" className="text-[#ae2027] hover:underline">Terms of Service</a> apply.
                     </p>
                   </form>
                 </div>
@@ -254,9 +254,9 @@ export default function IntensivesPage() {
                   return (
                     <div
                       key={index}
-                      className="text-center p-6 sm:p-8 bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl transition-all duration-300 hover:shadow-lg"
+                      className="text-center p-6 sm:p-8 bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl transition-all duration-300 hover:shadow-lg"
                     >
-                      <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                         <Icon className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
@@ -284,9 +284,9 @@ export default function IntensivesPage() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 max-w-md px-6 py-4 border-2 border-gray-300 rounded-lg focus:border-[#c41e3a] focus:outline-none"
+                  className="flex-1 max-w-md px-6 py-4 border-2 border-gray-300 rounded-lg focus:border-[#ae2027] focus:outline-none"
                 />
-                <button className="px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
+                <button className="px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
                   Start Here
                 </button>
               </div>
@@ -318,7 +318,7 @@ export default function IntensivesPage() {
                   <div
                     key={index}
                     className={`relative bg-white border-2 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl ${
-                      course.popular ? 'border-[#c41e3a] shadow-lg' : 'border-gray-200 hover:border-[#c41e3a]'
+                      course.popular ? 'border-[#ae2027] shadow-lg' : 'border-gray-200 hover:border-[#ae2027]'
                     }`}
                   >
                     {/* Popular Badge */}
@@ -330,7 +330,7 @@ export default function IntensivesPage() {
 
                     <div className="p-6 sm:p-8">
                       {/* Hours */}
-                      <div className="bg-[#c41e3a] text-white text-center py-3 rounded-lg mb-6">
+                      <div className="bg-[#ae2027] text-white text-center py-3 rounded-lg mb-6">
                         <span className="text-2xl font-bold">{course.hours} Hours</span>
                       </div>
 
@@ -354,7 +354,7 @@ export default function IntensivesPage() {
                       {/* Button */}
                       <Link
                         href="/book-now"
-                        className="block w-full bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-3 rounded-lg text-center transition-all duration-300"
+                        className="block w-full bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold py-3 rounded-lg text-center transition-all duration-300"
                       >
                         Book Now
                       </Link>
@@ -365,13 +365,13 @@ export default function IntensivesPage() {
 
               {/* Important Notes */}
               <div className="mt-12 space-y-4">
-                <div className="bg-[#c41e3a] text-white p-4 rounded-lg flex items-start gap-3">
+                <div className="bg-[#ae2027] text-white p-4 rounded-lg flex items-start gap-3">
                   <AlertCircle className="w-6 h-6 flex-shrink-0 mt-0.5" />
                   <p className="text-sm sm:text-base">
                     For international students: N/A
                   </p>
                 </div>
-                <div className="bg-[#c41e3a] text-white p-4 rounded-lg flex items-start gap-3">
+                <div className="bg-[#ae2027] text-white p-4 rounded-lg flex items-start gap-3">
                   <AlertCircle className="w-6 h-6 flex-shrink-0 mt-0.5" />
                   <p className="text-sm sm:text-base">
                     For those who have passed manual: N/A
@@ -432,7 +432,7 @@ export default function IntensivesPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Link
                 href="/book-now"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#c41e3a]/30 hover:scale-105 text-lg"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#ae2027]/30 hover:scale-105 text-lg"
               >
                 Book an Intensive Course
                 <ArrowRight className="h-6 w-6" />
@@ -440,7 +440,7 @@ export default function IntensivesPage() {
               <div className="mt-6">
                 <Link
                   href="/driving-lessons/prices"
-                  className="inline-flex items-center gap-2 text-gray-600 hover:text-[#c41e3a] transition-colors"
+                  className="inline-flex items-center gap-2 text-gray-600 hover:text-[#ae2027] transition-colors"
                 >
                   View all prices
                   <ArrowRight className="h-4 w-4" />

@@ -4,9 +4,9 @@ import { PAGE_CONTENT } from "@/lib/pageContent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Book Now - Drive 4 Pass Driving School",
+  title: "Book Now - Zell Driving School | Automatic Driving Lessons Liverpool",
   description:
-    "Book your driving lessons with Drive 4 Pass. Choose from standard lessons, intensive courses, ADI training, or franchise opportunities.",
+    "Book automatic driving lessons in Liverpool with Zell Driving School. Professional automatic driving school Liverpool – get started today.",
 };
 
 export default function Page() {
@@ -47,7 +47,7 @@ export default function Page() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Drive 4 Pass Location"
+                  title="Zell Driving School Liverpool"
                 />
               </div>
 
@@ -64,8 +64,8 @@ export default function Page() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {/* Call Us */}
-              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 text-center hover:border-[#c41e3a] transition-all duration-300 hover:shadow-lg">
-                <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 text-center hover:border-[#ae2027] transition-all duration-300 hover:shadow-lg">
+                <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="currentColor"
@@ -79,15 +79,15 @@ export default function Page() {
                 </h3>
                 <a
                   href="tel:03333357000"
-                  className="text-2xl font-bold text-[#c41e3a] hover:text-[#a01830] transition-colors"
+                  className="text-2xl font-bold text-[#ae2027] hover:text-[#8a191f] transition-colors"
                 >
                   0333 335 7000
                 </a>
               </div>
 
               {/* Email Us */}
-              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 text-center hover:border-[#c41e3a] transition-all duration-300 hover:shadow-lg">
-                <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 text-center hover:border-[#ae2027] transition-all duration-300 hover:shadow-lg">
+                <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"
@@ -106,10 +106,10 @@ export default function Page() {
                   Email Us
                 </h3>
                 <a
-                  href="mailto:franchisecenter@pass.co.uk"
-                  className="text-lg font-semibold text-[#c41e3a] hover:text-[#a01830] transition-colors break-all"
+                  href="mailto:info@zelldrivingschool.co.uk"
+                  className="text-lg font-semibold text-[#ae2027] hover:text-[#8a191f] transition-colors break-all"
                 >
-                  franchisecenter@pass.co.uk
+                  info@zelldrivingschool.co.uk
                 </a>
               </div>
             </div>

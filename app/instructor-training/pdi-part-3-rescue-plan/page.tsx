@@ -184,7 +184,7 @@ export default function PDIPart3RescuePlanPage() {
     <PageShell title="PDI Part 3 Rescue Plan" intro="Turn setbacks into success">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-[#c41e3a]">
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-[#ae2027]">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
@@ -251,10 +251,10 @@ export default function PDIPart3RescuePlanPage() {
                       key={index}
                       className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                     >
-                      <div className="w-14 h-14 bg-gradient-to-br from-[#c41e3a] to-[#a01830] rounded-full flex items-center justify-center mx-auto mb-3">
+                      <div className="w-14 h-14 bg-gradient-to-br from-[#ae2027] to-[#8a191f] rounded-full flex items-center justify-center mx-auto mb-3">
                         <Icon className="w-7 h-7 text-white" />
                       </div>
-                      <div className="text-3xl sm:text-4xl font-black text-[#c41e3a] mb-1">
+                      <div className="text-3xl sm:text-4xl font-black text-[#ae2027] mb-1">
                         {stat.number}
                       </div>
                       <div className="text-sm text-gray-600 font-semibold">
@@ -277,7 +277,7 @@ export default function PDIPart3RescuePlanPage() {
                 Who Are Struggling with Part 3
               </h2>
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-6">
-                This programme gives you the <strong className="text-[#c41e3a]">confidence, clarity and 
+                This programme gives you the <strong className="text-[#ae2027]">confidence, clarity and 
                 practical skills</strong> to succeed. With a proven track record of helping PDIs pass 
                 after multiple attempts, we guide you every step of the way.
               </p>
@@ -322,7 +322,7 @@ export default function PDIPart3RescuePlanPage() {
                       >
                         {/* Content Card */}
                         <div className={`w-full lg:w-5/12 ${isEven ? 'lg:text-right' : 'lg:text-left'}`}>
-                          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border-2 border-gray-100 hover:border-[#c41e3a] transition-all duration-300 hover:shadow-2xl">
+                          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border-2 border-gray-100 hover:border-[#ae2027] transition-all duration-300 hover:shadow-2xl">
                             <div className={`flex items-center gap-3 mb-4 ${isEven ? 'lg:flex-row-reverse lg:justify-end' : 'lg:justify-start'}`}>
                               <div className={`w-12 h-12 bg-gradient-to-br ${day.color} rounded-xl flex items-center justify-center`}>
                                 <Icon className="w-6 h-6 text-white" />
@@ -383,10 +383,10 @@ export default function PDIPart3RescuePlanPage() {
                   return (
                     <div
                       key={index}
-                      className="flex gap-6 p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl hover:border-[#c41e3a] hover:shadow-xl transition-all duration-300"
+                      className="flex gap-6 p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl hover:border-[#ae2027] hover:shadow-xl transition-all duration-300"
                     >
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-br from-[#c41e3a] to-[#a01830] rounded-xl flex items-center justify-center">
+                        <div className="w-16 h-16 bg-gradient-to-br from-[#ae2027] to-[#8a191f] rounded-xl flex items-center justify-center">
                           <Icon className="w-8 h-8 text-white" />
                         </div>
                       </div>
@@ -411,7 +411,7 @@ export default function PDIPart3RescuePlanPage() {
           {/* Background decoration */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#c41e3a] rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#ae2027] rounded-full blur-3xl"></div>
           </div>
 
           <div className="container mx-auto px-4 relative">
@@ -446,7 +446,7 @@ export default function PDIPart3RescuePlanPage() {
                     {/* Author */}
                     <div className="pt-6 border-t border-white/20">
                       <div className="flex items-center gap-3 mb-2">
-                        <div className="w-12 h-12 bg-gradient-to-br from-[#c41e3a] to-[#a01830] rounded-full flex items-center justify-center">
+                        <div className="w-12 h-12 bg-gradient-to-br from-[#ae2027] to-[#8a191f] rounded-full flex items-center justify-center">
                           <span className="text-white font-bold text-lg">
                             {testimonial.name.charAt(0)}
                           </span>
@@ -478,7 +478,7 @@ export default function PDIPart3RescuePlanPage() {
               </div>
 
               <div className="bg-white rounded-3xl shadow-2xl border-2 border-gray-200 overflow-hidden">
-                <div className="bg-gradient-to-r from-[#c41e3a] to-[#a01830] p-8 text-center">
+                <div className="bg-gradient-to-r from-[#ae2027] to-[#8a191f] p-8 text-center">
                   <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">
                     Book Your 7-Day Rescue Plan
                   </h3>
@@ -500,7 +500,7 @@ export default function PDIPart3RescuePlanPage() {
                         onChange={handleChange}
                         placeholder="Your full name"
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                       />
                     </div>
 
@@ -516,7 +516,7 @@ export default function PDIPart3RescuePlanPage() {
                           onChange={handleChange}
                           placeholder="your.email@example.com"
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                         />
                       </div>
 
@@ -531,7 +531,7 @@ export default function PDIPart3RescuePlanPage() {
                           onChange={handleChange}
                           placeholder="07XX XXX XXXX"
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                         />
                       </div>
                     </div>
@@ -545,7 +545,7 @@ export default function PDIPart3RescuePlanPage() {
                         value={formData.attempts}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors appearance-none bg-white"
+                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors appearance-none bg-white"
                       >
                         <option value="">-- Please select --</option>
                         <option value="1">1 attempt</option>
@@ -568,7 +568,7 @@ export default function PDIPart3RescuePlanPage() {
 
                     <button
                       type="submit"
-                      className="w-full py-4 bg-gradient-to-r from-[#c41e3a] to-[#a01830] hover:from-[#a01830] hover:to-[#c41e3a] text-white font-black text-lg rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-3"
+                      className="w-full py-4 bg-gradient-to-r from-[#ae2027] to-[#8a191f] hover:from-[#8a191f] hover:to-[#ae2027] text-white font-black text-lg rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-3"
                     >
                       Book Your Rescue Plan Now
                       <ArrowRight className="w-6 h-6" />
@@ -585,7 +585,7 @@ export default function PDIPart3RescuePlanPage() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
                     href="tel:03333357000"
-                    className="inline-flex items-center gap-3 px-6 py-3 bg-white border-2 border-[#c41e3a] text-[#c41e3a] hover:bg-[#c41e3a] hover:text-white font-bold rounded-full transition-all duration-300"
+                    className="inline-flex items-center gap-3 px-6 py-3 bg-white border-2 border-[#ae2027] text-[#ae2027] hover:bg-[#ae2027] hover:text-white font-bold rounded-full transition-all duration-300"
                   >
                     <Phone className="w-5 h-5" />
                     Call 0333 335 7000
@@ -604,7 +604,7 @@ export default function PDIPart3RescuePlanPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-16 sm:py-20 bg-gradient-to-r from-gray-900 to-[#c41e3a] text-white">
+        <section className="py-16 sm:py-20 bg-gradient-to-r from-gray-900 to-[#ae2027] text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <RefreshCw className="w-16 h-16 mx-auto mb-6 text-yellow-400" />
@@ -649,7 +649,7 @@ export default function PDIPart3RescuePlanPage() {
                 <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy (UK)</Link>
               </p>
               <p className="text-gray-500 text-xs mt-4">
-                © {new Date().getFullYear()} Drive 4 Pass Driving School. All rights reserved.
+                © {new Date().getFullYear()} Zell Driving School. All rights reserved.
               </p>
             </div>
           </div>

@@ -137,7 +137,7 @@ export default function ResourcesPage() {
                 return (
                   <div
                     key={resource.id}
-                    className="group bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-gray-200 hover:border-[#c41e3a] transition-all duration-300 hover:shadow-2xl"
+                    className="group bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-gray-200 hover:border-[#ae2027] transition-all duration-300 hover:shadow-2xl"
                   >
                     <div className={`grid lg:grid-cols-2 gap-0 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
                       {/* Image/Icon Side */}
@@ -155,7 +155,7 @@ export default function ResourcesPage() {
                       {/* Content Side */}
                       <div className="p-6 sm:p-8 lg:p-10">
                         <div className="flex items-start gap-3 mb-4">
-                          <div className="flex-shrink-0 w-12 h-12 bg-[#c41e3a] rounded-lg flex items-center justify-center">
+                          <div className="flex-shrink-0 w-12 h-12 bg-[#ae2027] rounded-lg flex items-center justify-center">
                             <Icon className="w-6 h-6 text-white" />
                           </div>
                           <div>
@@ -177,7 +177,7 @@ export default function ResourcesPage() {
                               href={link.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="group/link flex items-center justify-between p-4 bg-gray-50 hover:bg-[#c41e3a] rounded-lg transition-all duration-300 border-2 border-gray-100 hover:border-[#c41e3a]"
+                              className="group/link flex items-center justify-between p-4 bg-gray-50 hover:bg-[#ae2027] rounded-lg transition-all duration-300 border-2 border-gray-100 hover:border-[#ae2027]"
                             >
                               <span className="text-sm sm:text-base font-medium text-gray-900 group-hover/link:text-white transition-colors">
                                 {link.text}
@@ -208,10 +208,10 @@ export default function ResourcesPage() {
                   href="https://www.gov.uk/apply-first-provisional-driving-licence"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-6 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl transition-all duration-300 hover:shadow-lg"
+                  className="group p-6 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl transition-all duration-300 hover:shadow-lg"
                 >
-                  <FileText className="w-10 h-10 text-[#c41e3a] mb-4" />
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#c41e3a] transition-colors">
+                  <FileText className="w-10 h-10 text-[#ae2027] mb-4" />
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#ae2027] transition-colors">
                     Apply for Licence
                   </h3>
                   <p className="text-sm text-gray-600">
@@ -223,10 +223,10 @@ export default function ResourcesPage() {
                   href="https://www.gov.uk/book-theory-test"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-6 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl transition-all duration-300 hover:shadow-lg"
+                  className="group p-6 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl transition-all duration-300 hover:shadow-lg"
                 >
-                  <Book className="w-10 h-10 text-[#c41e3a] mb-4" />
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#c41e3a] transition-colors">
+                  <Book className="w-10 h-10 text-[#ae2027] mb-4" />
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#ae2027] transition-colors">
                     Book Theory Test
                   </h3>
                   <p className="text-sm text-gray-600">
@@ -238,10 +238,10 @@ export default function ResourcesPage() {
                   href="https://www.gov.uk/book-practical-driving-test"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-6 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl transition-all duration-300 hover:shadow-lg"
+                  className="group p-6 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl transition-all duration-300 hover:shadow-lg"
                 >
-                  <CheckCircle className="w-10 h-10 text-[#c41e3a] mb-4" />
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#c41e3a] transition-colors">
+                  <CheckCircle className="w-10 h-10 text-[#ae2027] mb-4" />
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#ae2027] transition-colors">
                     Book Practical Test
                   </h3>
                   <p className="text-sm text-gray-600">
@@ -253,10 +253,10 @@ export default function ResourcesPage() {
                   href="https://www.gov.uk/guidance/the-highway-code"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-6 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl transition-all duration-300 hover:shadow-lg"
+                  className="group p-6 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl transition-all duration-300 hover:shadow-lg"
                 >
-                  <Shield className="w-10 h-10 text-[#c41e3a] mb-4" />
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#c41e3a] transition-colors">
+                  <Shield className="w-10 h-10 text-[#ae2027] mb-4" />
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#ae2027] transition-colors">
                     Highway Code
                   </h3>
                   <p className="text-sm text-gray-600">
@@ -272,7 +272,7 @@ export default function ResourcesPage() {
         <section className="py-12 sm:py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="bg-gradient-to-br from-[#c41e3a] to-[#a01830] rounded-2xl p-8 sm:p-12 text-center text-white">
+              <div className="bg-gradient-to-br from-[#ae2027] to-[#8a191f] rounded-2xl p-8 sm:p-12 text-center text-white">
                 <Users className="w-16 h-16 mx-auto mb-6" />
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4">
                   Need Help Finding Something?
@@ -282,7 +282,7 @@ export default function ResourcesPage() {
                 </p>
                 <a
                   href="/book-now"
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-[#c41e3a] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-[#ae2027] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 >
                   Contact Us
                   <ExternalLink className="h-5 w-5" />
@@ -297,7 +297,7 @@ export default function ResourcesPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto text-center">
               <p className="text-sm text-gray-500">
-                * External links will open in a new window. Drive 4 Pass is not responsible for the content of external websites.
+                * External links will open in a new window. Zell Driving School is not responsible for the content of external websites.
               </p>
             </div>
           </div>
