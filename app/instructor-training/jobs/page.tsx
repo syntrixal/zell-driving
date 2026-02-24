@@ -69,7 +69,7 @@ const jobBenefits = [
     icon: Users,
     title: "Steady Student Flow",
     description:
-      "Benefit from Zell Driving's established brand and marketing to maintain a consistent stream of Liverpool students.",
+      "Benefit from Zell Driving School's established brand and marketing to maintain a consistent stream of Liverpool students.",
   },
   {
     icon: Shield,
@@ -123,21 +123,21 @@ const testimonials = [
   {
     name: "Sarah Mitchell",
     role: "ADI - 3 years",
-    text: "Best career decision I ever made. The training was thorough, and the support from Zell Driving has been incredible. I'm now earning more than I did in my previous job with much better work-life balance.",
+    text: "Best career decision I ever made. The training was thorough, and the support from Zell Driving School has been incredible. I'm now earning more than I did in my previous job with much better work-life balance.",
     rating: 5,
     location: "Liverpool",
   },
   {
     name: "James Thompson",
     role: "ADI - 2 years",
-    text: "The flexibility is unbeatable. I can work around my family commitments while still earning a great income. The student flow from Zell Driving means I'm never short of work in Liverpool.",
+    text: "The flexibility is unbeatable. I can work around my family commitments while still earning a great income. The student flow from Zell Driving School means I'm never short of work in Liverpool.",
     rating: 5,
     location: "Liverpool",
   },
   {
     name: "Priya Patel",
     role: "ADI - 1 year",
-    text: "Transitioning careers can be daunting, but Zell Driving made it seamless. Their training program prepared me thoroughly, and I passed all three parts on my first attempt!",
+    text: "Transitioning careers can be daunting, but Zell Driving School made it seamless. Their training program prepared me thoroughly, and I passed all three parts on my first attempt!",
     rating: 5,
     location: "Liverpool",
   },
@@ -182,7 +182,7 @@ export default function InstructorJobsPage() {
     <PageShell title={content.title} intro={content.intro}>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-[#c41e3a] to-gray-900">
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-[#ae2027] to-gray-900">
           <div className="absolute inset-0 opacity-10">
             <div
               className="absolute inset-0"
@@ -206,7 +206,7 @@ export default function InstructorJobsPage() {
               </h1>
 
               <p className="text-xl sm:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed">
-                Start your new flexible, rewarding career with Zell Driving —
+                Start your new flexible, rewarding career with Zell Driving School —
                 Liverpool's trusted driving school
               </p>
 
@@ -259,7 +259,7 @@ export default function InstructorJobsPage() {
                     key={index}
                     className="text-center p-6 bg-white rounded-2xl shadow-lg"
                   >
-                    <div className="text-3xl sm:text-4xl font-black text-[#c41e3a] mb-2">
+                    <div className="text-3xl sm:text-4xl font-black text-[#ae2027] mb-2">
                       {stat.label}
                     </div>
                     <div className="text-sm text-gray-600 font-semibold">
@@ -281,12 +281,12 @@ export default function InstructorJobsPage() {
               </h2>
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
                 Whether you're just starting or are an experienced Approved
-                Driving Instructor (ADI), Zell Driving has exciting
+                Driving Instructor (ADI), Zell Driving School has exciting
                 opportunities waiting for you in Liverpool. Join our
                 award-winning team, enjoy open earnings potential, and grow your
                 career with one of Liverpool's most trusted driving schools.
               </p>
-              <div className="inline-flex items-center gap-2 text-[#c41e3a] font-bold text-lg">
+              <div className="inline-flex items-center gap-2 text-[#ae2027] font-bold text-lg">
                 <Heart className="w-6 h-6 fill-current" />
                 <span>Start your Liverpool journey today!</span>
               </div>
@@ -304,7 +304,7 @@ export default function InstructorJobsPage() {
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                   Whether you're starting from scratch or already qualified,
-                  Zell Driving has the perfect opportunity for you in Liverpool
+                  Zell Driving School has the perfect opportunity for you in Liverpool
                 </p>
               </div>
 
@@ -314,8 +314,8 @@ export default function InstructorJobsPage() {
                     key={index}
                     className={`relative rounded-3xl p-8 sm:p-10 transition-all duration-300 ${
                       path.highlight
-                        ? "bg-gradient-to-br from-[#c41e3a] to-[#a01830] text-white shadow-2xl scale-105 border-4 border-yellow-400"
-                        : "bg-white border-2 border-gray-200 hover:border-[#c41e3a] hover:shadow-xl"
+                        ? "bg-gradient-to-br from-[#ae2027] to-[#8a191f] text-white shadow-2xl scale-105 border-4 border-yellow-400"
+                        : "bg-white border-2 border-gray-200 hover:border-[#ae2027] hover:shadow-xl"
                     }`}
                   >
                     {path.highlight && (
@@ -332,7 +332,7 @@ export default function InstructorJobsPage() {
                         {path.title}
                       </h3>
                       <p
-                        className={`text-lg font-semibold ${path.highlight ? "text-yellow-300" : "text-[#c41e3a]"}`}
+                        className={`text-lg font-semibold ${path.highlight ? "text-yellow-300" : "text-[#ae2027]"}`}
                       >
                         {path.subtitle}
                       </p>
@@ -356,7 +356,7 @@ export default function InstructorJobsPage() {
                       className={`group inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all duration-300 ${
                         path.highlight
                           ? "bg-yellow-400 hover:bg-yellow-300 text-gray-900"
-                          : "bg-[#c41e3a] hover:bg-[#a01830] text-white"
+                          : "bg-[#ae2027] hover:bg-[#8a191f] text-white"
                       }`}
                     >
                       {path.cta}
@@ -375,7 +375,7 @@ export default function InstructorJobsPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-4">
-                  Why Work with Zell Driving?
+                  Why Work with Zell Driving School?
                 </h2>
                 <p className="text-lg text-gray-600">
                   Join a Liverpool team that values your success and provides
@@ -388,9 +388,9 @@ export default function InstructorJobsPage() {
                   return (
                     <div
                       key={index}
-                      className="group p-6 bg-white border-2 border-gray-200 rounded-2xl hover:border-[#c41e3a] hover:shadow-xl transition-all duration-300"
+                      className="group p-6 bg-white border-2 border-gray-200 rounded-2xl hover:border-[#ae2027] hover:shadow-xl transition-all duration-300"
                     >
-                      <div className="w-14 h-14 bg-gradient-to-br from-[#c41e3a] to-[#a01830] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-14 h-14 bg-gradient-to-br from-[#ae2027] to-[#8a191f] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-7 h-7 text-white" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -468,9 +468,9 @@ export default function InstructorJobsPage() {
                 {whyZellDriving.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-[#c41e3a] hover:shadow-lg transition-all duration-300"
+                    className="flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-[#ae2027] hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="flex-shrink-0 w-2 h-2 bg-[#c41e3a] rounded-full mt-2"></div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#ae2027] rounded-full mt-2"></div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">
                         {item.title}
@@ -496,14 +496,14 @@ export default function InstructorJobsPage() {
                 </h2>
                 <p className="text-lg text-gray-600">
                   Real stories from real instructors who've transformed their
-                  careers with Zell Driving in Liverpool
+                  careers with Zell Driving School in Liverpool
                 </p>
               </div>
               <div className="grid md:grid-cols-3 gap-8">
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 border-gray-200 hover:border-[#c41e3a] hover:shadow-2xl transition-all duration-300"
+                    className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 border-gray-200 hover:border-[#ae2027] hover:shadow-2xl transition-all duration-300"
                   >
                     <div className="flex gap-1 mb-6">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -517,7 +517,7 @@ export default function InstructorJobsPage() {
                       "{testimonial.text}"
                     </p>
                     <div className="flex items-center gap-3 pt-6 border-t border-gray-200">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#c41e3a] to-[#a01830] rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#ae2027] to-[#8a191f] rounded-full flex items-center justify-center">
                         <span className="text-white font-bold text-lg">
                           {testimonial.name.charAt(0)}
                         </span>
@@ -555,7 +555,7 @@ export default function InstructorJobsPage() {
                 </h2>
                 <p className="text-lg text-gray-600">
                   Apply now and drive your career forward in Liverpool with Zell
-                  Driving!
+                  Driving School!
                 </p>
               </div>
               <EnquiryForm allowedTabs={["Instructor Application"]} />
@@ -605,7 +605,7 @@ export default function InstructorJobsPage() {
               <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full text-sm">
                 <MapPin className="w-4 h-4 text-yellow-400" />
                 <span className="text-gray-300">
-                  Zell Driving — Serving Liverpool
+                  Zell Driving School — Serving Liverpool
                 </span>
               </div>
             </div>

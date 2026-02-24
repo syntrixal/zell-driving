@@ -25,7 +25,7 @@ const whyBecomeInstructor = [
     icon: Calendar,
     title: "Flexible Work Schedule",
     description:
-      "Set your own schedule and work hours to suit your lifestyle. Being a driving instructor with Zell Driving in Liverpool gives you the freedom to choose your hours.",
+      "Set your own schedule and work hours to suit your lifestyle. Being a driving instructor with Zell Driving School in Liverpool gives you the freedom to choose your hours.",
   },
   {
     icon: Smile,
@@ -43,7 +43,7 @@ const whyBecomeInstructor = [
     icon: Car,
     title: "Comfortable Work Environment",
     description:
-      "Use premium vehicles. Most Zell Driving ADIs enjoy the comfort of modern, well-maintained cars across Liverpool, making your working day a pleasure.",
+      "Use premium vehicles. Most Zell Driving School ADIs enjoy the comfort of modern, well-maintained cars across Liverpool, making your working day a pleasure.",
   },
   {
     icon: CheckCircle,
@@ -55,7 +55,7 @@ const whyBecomeInstructor = [
     icon: DollarSign,
     title: "Consistent Demand and Income",
     description:
-      "Liverpool's driving instruction industry is stable and recession-resistant. Enjoy financial stability and dependable income with Zell Driving!",
+      "Liverpool's driving instruction industry is stable and recession-resistant. Enjoy financial stability and dependable income with Zell Driving School!",
   },
   {
     icon: MapPin,
@@ -69,7 +69,7 @@ const whyTrainWithUs = [
   {
     title: "Modern Teaching Techniques",
     description:
-      "Stay ahead of the curve with the latest teaching methods and tools, ensuring Zell Driving instructors are highly professional and award-trained.",
+      "Stay ahead of the curve with the latest teaching methods and tools, ensuring Zell Driving School instructors are highly professional and award-trained.",
   },
   {
     title: "Comprehensive Training for ADI Qualification",
@@ -91,17 +91,17 @@ const whyTrainWithUs = [
 const testimonials = [
   {
     name: "Paul Hussain",
-    text: "I enjoy teaching and helping students become safe drivers in Liverpool. Zell Driving gave me the flexibility to spend time with my family while earning a great income.",
+    text: "I enjoy teaching and helping students become safe drivers in Liverpool. Zell Driving School gave me the flexibility to spend time with my family while earning a great income.",
     rating: 5,
   },
   {
     name: "Sarah Mitchell",
-    text: "The training at Zell Driving was comprehensive and the support team was amazing. I passed my ADI test first time and now run my own successful driving school in Liverpool.",
+    text: "The training at Zell Driving School was comprehensive and the support team was amazing. I passed my ADI test first time and now run my own successful driving school in Liverpool.",
     rating: 5,
   },
   {
     name: "James Thompson",
-    text: "Best decision I ever made. Zell Driving's flexibility and earning potential in Liverpool are excellent, plus I get genuine satisfaction from helping people achieve their goals.",
+    text: "Best decision I ever made. Zell Driving School's flexibility and earning potential in Liverpool are excellent, plus I get genuine satisfaction from helping people achieve their goals.",
     rating: 5,
   },
 ];
@@ -123,7 +123,7 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Join Zell Driving's ADI Training in Liverpool today and get
+                Join Zell Driving School's ADI Training in Liverpool today and get
                 started towards a new career
               </h2>
             </div>
@@ -139,7 +139,7 @@ export default function InstructorTrainingPage() {
                   <p className="text-lg sm:text-xl leading-relaxed">
                     Looking for a fulfilling career with flexibility and high
                     earning potential in Liverpool? Become a driving instructor
-                    with Zell Driving. Enjoy the freedom of being your own boss,
+                    with Zell Driving School. Enjoy the freedom of being your own boss,
                     the reward of transforming lives, and the security of
                     consistent demand across Liverpool. Start your journey today
                     with our award-winning instructor training program.
@@ -147,12 +147,12 @@ export default function InstructorTrainingPage() {
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border-2 border-gray-900">
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
-                    Ready to get started? Contact Zell Driving today to learn
+                    Ready to get started? Contact Zell Driving School today to learn
                     more about our Liverpool instructor training!
                   </h3>
                   <Link
                     href="/book-now"
-                    className="inline-flex items-center gap-3 px-6 py-3 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="inline-flex items-center gap-3 px-6 py-3 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Contact Us
                     <ArrowRight className="h-5 w-5" />
@@ -168,7 +168,7 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-                Why Become a Driving Instructor with Zell Driving in Liverpool?
+                Why Become a Driving Instructor with Zell Driving School in Liverpool?
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 {whyBecomeInstructor.map((benefit, index) => {
@@ -176,9 +176,9 @@ export default function InstructorTrainingPage() {
                   return (
                     <div
                       key={index}
-                      className="text-center p-6 sm:p-8 bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl transition-all duration-300 hover:shadow-lg"
+                      className="text-center p-6 sm:p-8 bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl transition-all duration-300 hover:shadow-lg"
                     >
-                      <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                         <Icon className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
@@ -209,7 +209,7 @@ export default function InstructorTrainingPage() {
                       Start Your Instructor Training in Liverpool
                     </h3>
                     <p className="text-lg sm:text-xl mb-4">
-                      Transform Your Career with Zell Driving
+                      Transform Your Career with Zell Driving School
                     </p>
                     <div className="bg-white text-green-600 px-6 py-3 rounded-full font-bold inline-block">
                       ZELL DRIVING
@@ -238,12 +238,12 @@ export default function InstructorTrainingPage() {
                   placeholder="Enter your email/mobile"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 max-w-md px-6 py-4 border-2 border-gray-300 rounded-lg focus:border-[#c41e3a] focus:outline-none"
+                  className="flex-1 max-w-md px-6 py-4 border-2 border-gray-300 rounded-lg focus:border-[#ae2027] focus:outline-none"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap"
+                  className="px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap"
                 >
                   Get Started
                 </button>
@@ -257,16 +257,16 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-                Why Train with Zell Driving in Liverpool?
+                Why Train with Zell Driving School in Liverpool?
               </h2>
               <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
                 {whyTrainWithUs.map((item, index) => (
                   <div
                     key={index}
-                    className="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl transition-all duration-300 hover:shadow-lg"
+                    className="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl transition-all duration-300 hover:shadow-lg"
                   >
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#c41e3a] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#ae2027] rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                       </div>
                     </div>
@@ -296,7 +296,7 @@ export default function InstructorTrainingPage() {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="bg-gray-50 border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-lg"
+                    className="bg-gray-50 border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-lg"
                   >
                     <div className="flex gap-1 mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -310,7 +310,7 @@ export default function InstructorTrainingPage() {
                       "{testimonial.text}"
                     </p>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-[#c41e3a] rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-[#ae2027] rounded-full flex items-center justify-center">
                         <span className="text-white font-bold">
                           {testimonial.name.charAt(0)}
                         </span>
@@ -332,7 +332,7 @@ export default function InstructorTrainingPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-12 sm:py-16 bg-gradient-to-r from-[#c41e3a] to-[#a01830]">
+        <section className="py-12 sm:py-16 bg-gradient-to-r from-[#ae2027] to-[#8a191f]">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
@@ -343,7 +343,7 @@ export default function InstructorTrainingPage() {
                 <Link
                   href="/careers
                   "
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-[#c41e3a] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-[#ae2027] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 >
                   Start Your Training
                   <ArrowRight className="h-5 w-5" />
@@ -371,7 +371,7 @@ export default function InstructorTrainingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 sm:gap-8">
               <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl">
-                <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -383,7 +383,7 @@ export default function InstructorTrainingPage() {
                 </p>
               </div>
               <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl">
-                <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -395,14 +395,14 @@ export default function InstructorTrainingPage() {
                 </p>
               </div>
               <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl">
-                <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   Comprehensive Support
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Ongoing guidance and resources throughout your Zell Driving
+                  Ongoing guidance and resources throughout your Zell Driving School
                   journey
                 </p>
               </div>

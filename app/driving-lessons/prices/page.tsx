@@ -121,14 +121,14 @@ export default function PricesPage() {
     <PageShell title={content.title} intro={content.intro}>
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         {/* Red Banner */}
-        <section className="bg-[#c41e3a] py-8 sm:py-12">
+        <section className="bg-[#ae2027] py-8 sm:py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Simple, Transparent Pricing — Liverpool Only
               </h2>
               <p className="text-white/90 text-base sm:text-lg leading-relaxed">
-                At Zell Driving, our prices are carefully set to reflect
+                At Zell Driving School, our prices are carefully set to reflect
                 Liverpool's local driving school rates — keeping your lessons
                 fair, transparent, and great value. Choose the plan that suits
                 you best.
@@ -150,7 +150,7 @@ export default function PricesPage() {
                       onClick={() => setActivePlan(plan.id)}
                       className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
                         activePlan === plan.id
-                          ? "bg-[#c41e3a] text-white shadow"
+                          ? "bg-[#ae2027] text-white shadow"
                           : "text-gray-600 hover:text-gray-900"
                       }`}
                     >
@@ -168,10 +168,10 @@ export default function PricesPage() {
                     onClick={() => setActivePlan(plan.id)}
                     className={`relative rounded-3xl p-8 border-2 cursor-pointer transition-all duration-300 flex flex-col ${
                       plan.highlight
-                        ? "bg-gradient-to-br from-[#c41e3a] to-[#a01830] border-[#c41e3a] text-white shadow-2xl scale-105"
+                        ? "bg-gradient-to-br from-[#ae2027] to-[#8a191f] border-[#ae2027] text-white shadow-2xl scale-105"
                         : activePlan === plan.id
-                          ? "bg-white border-[#c41e3a] shadow-xl"
-                          : "bg-white border-gray-200 hover:border-[#c41e3a] hover:shadow-lg"
+                          ? "bg-white border-[#ae2027] shadow-xl"
+                          : "bg-white border-gray-200 hover:border-[#ae2027] hover:shadow-lg"
                     }`}
                   >
                     {plan.highlight && (
@@ -184,7 +184,7 @@ export default function PricesPage() {
 
                     <div className="mb-6">
                       <p
-                        className={`text-sm font-semibold mb-1 ${plan.highlight ? "text-yellow-300" : "text-[#c41e3a]"}`}
+                        className={`text-sm font-semibold mb-1 ${plan.highlight ? "text-yellow-300" : "text-[#ae2027]"}`}
                       >
                         {plan.subtitle}
                       </p>
@@ -195,7 +195,7 @@ export default function PricesPage() {
                       </h3>
                       <div className="flex items-end gap-2 mb-3">
                         <span
-                          className={`text-5xl font-black ${plan.highlight ? "text-white" : "text-[#c41e3a]"}`}
+                          className={`text-5xl font-black ${plan.highlight ? "text-white" : "text-[#ae2027]"}`}
                         >
                           £{plan.price}
                         </span>
@@ -232,7 +232,7 @@ export default function PricesPage() {
                       className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-bold text-sm transition-all duration-300 ${
                         plan.highlight
                           ? "bg-yellow-400 hover:bg-yellow-300 text-gray-900"
-                          : "bg-[#c41e3a] hover:bg-[#a01830] text-white"
+                          : "bg-[#ae2027] hover:bg-[#8a191f] text-white"
                       }`}
                     >
                       {plan.cta}
@@ -254,7 +254,7 @@ export default function PricesPage() {
                   Areas We Cover in Liverpool
                 </h2>
                 <p className="text-gray-600 text-base sm:text-lg">
-                  Zell Driving operates exclusively across Liverpool. Find your
+                  Zell Driving School operates exclusively across Liverpool. Find your
                   area below.
                 </p>
               </div>
@@ -263,7 +263,7 @@ export default function PricesPage() {
                   {liverpoolAreas.map((area) => (
                     <span
                       key={area}
-                      className="inline-flex items-center px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-full text-sm text-gray-700 hover:border-[#c41e3a] hover:text-[#c41e3a] transition-colors"
+                      className="inline-flex items-center px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-full text-sm text-gray-700 hover:border-[#ae2027] hover:text-[#ae2027] transition-colors"
                     >
                       {area}
                     </span>
@@ -279,7 +279,7 @@ export default function PricesPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">
-                Why Choose Zell Driving's Pricing?
+                Why Choose Zell Driving School's Pricing?
               </h2>
               <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
                 {[
@@ -297,7 +297,7 @@ export default function PricesPage() {
                   },
                   {
                     title: "Special Discounts",
-                    desc: "Blue Light Card holders and students save on every lesson with Zell Driving.",
+                    desc: "Blue Light Card holders and students save on every lesson with Zell Driving School.",
                     icon: (
                       <path
                         strokeLinecap="round"
@@ -322,9 +322,9 @@ export default function PricesPage() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="text-center p-6 bg-gray-50 rounded-2xl border-2 border-gray-200 hover:border-[#c41e3a] transition-all duration-300"
+                    className="text-center p-6 bg-gray-50 rounded-2xl border-2 border-gray-200 hover:border-[#ae2027] transition-all duration-300"
                   >
-                    <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                       <svg
                         className="w-8 h-8 text-white"
                         fill="none"
@@ -351,11 +351,11 @@ export default function PricesPage() {
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                 Ready to get started? Choose the plan that suits you and book
-                your first lesson with Zell Driving in Liverpool today.
+                your first lesson with Zell Driving School in Liverpool today.
               </p>
               <Link
                 href="/book-now"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Book Now
                 <ArrowRight className="h-5 w-5" />
