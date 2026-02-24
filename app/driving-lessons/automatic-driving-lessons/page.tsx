@@ -43,7 +43,7 @@ export default function AutomaticDrivingLessonsPage() {
       icon: Building2,
       title: "Effortless City Driving",
       description:
-        "Navigate London's busy streets with ease. Automatic cars are perfect for stop-and-go traffic, letting you focus on the road ahead.",
+        "Navigate Liverpool's busy streets with ease. Automatic cars are perfect for stop-and-go traffic, letting you focus on the road ahead.",
     },
     {
       icon: Shield,
@@ -61,7 +61,10 @@ export default function AutomaticDrivingLessonsPage() {
         <section className="py-12 sm:py-16 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 rounded-full text-sm font-medium text-gray-700 border border-gray-200">
+                Why Automatic?
+              </span>
+              <div className="grid md:grid-cols-2 gap-8 items-center mt-6">
                 <div>
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                     Do you want to learn to drive without the stress of gears
@@ -85,18 +88,21 @@ export default function AutomaticDrivingLessonsPage() {
         <section className="py-16 sm:py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200">
+                Benefits
+              </span>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-6">
                 {benefits.map((benefit, index) => {
                   const Icon = benefit.icon;
                   return (
                     <div
                       key={index}
-                      className="group bg-white border-2 border-gray-100 rounded-2xl p-6 sm:p-8 hover:border-[#c41e3a] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                      className="group bg-white border-2 border-gray-100 rounded-2xl p-6 sm:p-8 hover:border-[#ae2027] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                     >
                       {/* Icon */}
                       <div className="mb-6">
-                        <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-100 group-hover:bg-[#c41e3a] rounded-2xl transition-colors duration-300">
-                          <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-[#c41e3a] group-hover:text-white transition-colors duration-300" />
+                        <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gray-100 group-hover:bg-[#ae2027] rounded-2xl transition-colors duration-300">
+                          <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-[#ae2027] group-hover:text-white transition-colors duration-300" />
                         </div>
                       </div>
 
@@ -132,7 +138,7 @@ export default function AutomaticDrivingLessonsPage() {
               </p>
               <Link
                 href="/book-now"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#c41e3a]/30 hover:scale-105"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#ae2027]/30 hover:scale-105"
               >
                 Book Your First Lesson
                 <ArrowRight className="h-5 w-5" />

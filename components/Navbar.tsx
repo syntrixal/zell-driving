@@ -3,7 +3,6 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Car } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 type NavItem =
@@ -13,12 +12,10 @@ type NavItem =
 const NAV: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Book Now", href: "/book-now" },
-
   {
     label: "Driving Lessons",
     href: "/driving-lessons",
     items: [
-      // { label: "Areas", href: "/driving-lessons/areas" },
       {
         label: "Automatic Driving Lessons",
         href: "/driving-lessons/automatic-driving-lessons",
@@ -27,17 +24,6 @@ const NAV: NavItem[] = [
       { label: "FAQ", href: "/driving-lessons/faq" },
     ],
   },
-  // { label: "Intensives", href: "/intensives" },
-  // {
-  //   label: "Instructor Training",
-  //   href: "/instructor-training",
-  //   items: [
-  //     { label: "Instructor Training", href: "/instructor-training" },
-  //     { label: "Franchise", href: "/instructor-training/franchise" },
-  //     { label: "Jobs", href: "/instructor-training/jobs" },
-  //     { label: "PDI Part 3 Rescue Plan", href: "/instructor-training/pdi-part-3-rescue-plan" },
-  //   ],
-  // },
   { label: "Blogs", href: "/blogs" },
   { label: "Instructor Training", href: "/instructor-training" },
   {
@@ -69,19 +55,23 @@ export function Navbar() {
     setOpenDropdown(null);
   }, [pathname]);
 
+  const handleDropdownEnter = (label: string) => setOpenDropdown(label);
+  const handleDropdownLeave = () => setOpenDropdown(null);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gray-100 bg-white shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gray-800 bg-black shadow-lg">
       <Container>
         <div className="flex h-20 items-center justify-between">
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            {/* Replace logo-placeholder.png with the real brand logo here */}
             <img
               src="/zell_driving_school_logo.png"
               alt="Zell Driving School logo"
-              className="h-15 w-30 "
+              className="h-14 w-auto object-contain"
             />
           </Link>
 
+          {/* Desktop Nav */}
           <div className="hidden items-center gap-8 lg:flex">
             {NAV.map((item) => {
               const label = item.label;
@@ -94,8 +84,8 @@ export function Navbar() {
                   <div
                     key={label}
                     className="relative"
-                    onMouseEnter={() => setOpenDropdown(label)}
-                    onMouseLeave={() => setOpenDropdown(null)}
+                    onMouseEnter={() => handleDropdownEnter(label)}
+                    onMouseLeave={handleDropdownLeave}
                   >
                     <button
                       type="button"
@@ -103,31 +93,34 @@ export function Navbar() {
                         setOpenDropdown((v) => (v === label ? null : label))
                       }
                       className={`text-sm font-semibold transition ${
-                        active
-                          ? "text-gray-900"
-                          : "text-gray-700 hover:text-gray-900"
+                        active ? "text-white" : "text-gray-300 hover:text-white"
                       }`}
                     >
                       {label} ▾
                     </button>
                     {isOpen && (
-                      <div className="absolute left-0 top-full mt-2 w-56 overflow-hidden rounded-2xl border border-gray-100 bg-white py-2 shadow-lg">
-                        {item.items.map((sub) => {
-                          const subActive = isActivePath(pathname, sub.href);
-                          return (
-                            <Link
-                              key={sub.href}
-                              href={sub.href}
-                              className={`block px-4 py-2.5 text-sm transition ${
-                                subActive
-                                  ? "bg-gray-100 font-semibold text-gray-900"
-                                  : "text-gray-700 hover:bg-gray-50"
-                              }`}
-                            >
-                              {sub.label}
-                            </Link>
-                          );
-                        })}
+                      /* Added top-full with negative margin-top trick + pt-2 so the
+                         dropdown overlaps the gap, preventing mouseLeave firing when
+                         moving from button → dropdown */
+                      <div className="absolute left-0 top-full pt-2">
+                        <div className="w-56 overflow-hidden rounded-2xl border border-gray-700 bg-gray-900 py-2 shadow-xl">
+                          {item.items.map((sub) => {
+                            const subActive = isActivePath(pathname, sub.href);
+                            return (
+                              <Link
+                                key={sub.href}
+                                href={sub.href}
+                                className={`block px-4 py-2.5 text-sm transition ${
+                                  subActive
+                                    ? "bg-gray-700 font-semibold text-white"
+                                    : "text-gray-300 hover:bg-gray-800 hover:text-white"
+                                }`}
+                              >
+                                {sub.label}
+                              </Link>
+                            );
+                          })}
+                        </div>
                       </div>
                     )}
                   </div>
@@ -137,11 +130,9 @@ export function Navbar() {
               return (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={item.href!}
                   className={`text-sm font-semibold transition ${
-                    active
-                      ? "text-gray-900"
-                      : "text-gray-700 hover:text-gray-900"
+                    active ? "text-white" : "text-gray-300 hover:text-white"
                   }`}
                 >
                   {label}
@@ -150,6 +141,7 @@ export function Navbar() {
             })}
           </div>
 
+          {/* CTA + Hamburger */}
           <div className="flex items-center gap-4">
             <Link
               href="/book-now"
@@ -159,7 +151,7 @@ export function Navbar() {
             </Link>
             <button
               type="button"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 md:hidden"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-600 text-white md:hidden"
               onClick={() => setMobileOpen((v) => !v)}
               aria-label="Toggle menu"
             >
@@ -169,18 +161,19 @@ export function Navbar() {
         </div>
       </Container>
 
+      {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="border-t border-gray-100 bg-white pb-4 md:hidden">
+        <div className="border-t border-gray-800 bg-black pb-4 md:hidden">
           <Container>
             <nav className="mt-3 space-y-1">
               {NAV.map((item) => {
                 if ("items" in item) {
                   const open = openDropdown === item.label;
                   return (
-                    <div key={item.label} className="border-b border-gray-100">
+                    <div key={item.label} className="border-b border-gray-800">
                       <button
                         type="button"
-                        className="flex w-full items-center justify-between py-3 text-left font-semibold text-gray-900"
+                        className="flex w-full items-center justify-between py-3 text-left font-semibold text-white"
                         onClick={() =>
                           setOpenDropdown((v) =>
                             v === item.label ? null : item.label,
@@ -188,7 +181,9 @@ export function Navbar() {
                         }
                       >
                         {item.label}
-                        <span className="text-xs">{open ? "▲" : "▼"}</span>
+                        <span className="text-xs text-gray-400">
+                          {open ? "▲" : "▼"}
+                        </span>
                       </button>
                       {open && (
                         <div className="space-y-1 pb-3 pl-4">
@@ -196,7 +191,7 @@ export function Navbar() {
                             <Link
                               key={sub.href}
                               href={sub.href}
-                              className="block py-2 text-sm text-gray-600"
+                              className="block py-2 text-sm text-gray-400 hover:text-white"
                               onClick={() => setMobileOpen(false)}
                             >
                               {sub.label}
@@ -210,8 +205,8 @@ export function Navbar() {
                 return (
                   <Link
                     key={item.href}
-                    href={item.href}
-                    className="block py-3 font-semibold text-gray-900"
+                    href={item.href!}
+                    className="block py-3 font-semibold text-white"
                     onClick={() => setMobileOpen(false)}
                   >
                     {item.label}

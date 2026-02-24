@@ -103,7 +103,7 @@ export default function PostTestTuitionPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Driving wasn't Recorded? <span className="text-[#c41e3a]">Drive it for!</span>
+                Driving wasn't Recorded? <span className="text-[#ae2027]">Drive it for!</span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-600 mb-4">
                 BUILD ON YOUR EXISTING SKILLS AND IMPROVE CODE
@@ -127,18 +127,18 @@ export default function PostTestTuitionPage() {
                   return (
                     <div key={index} className="relative">
                       {/* Timeline Line */}
-                      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#c41e3a] -ml-px" />
+                      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#ae2027] -ml-px" />
                       
                       {/* Timeline Dot */}
-                      <div className="hidden md:flex absolute left-1/2 top-8 w-12 h-12 -ml-6 bg-[#c41e3a] rounded-full items-center justify-center z-10 border-4 border-white shadow-lg">
+                      <div className="hidden md:flex absolute left-1/2 top-8 w-12 h-12 -ml-6 bg-[#ae2027] rounded-full items-center justify-center z-10 border-4 border-white shadow-lg">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
 
                       {/* Content Card */}
                       <div className={`md:w-1/2 ${isLeft ? 'md:pr-16' : 'md:ml-auto md:pl-16'}`}>
-                        <div className={`bg-gradient-to-br ${benefit.bgColor} border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl`}>
+                        <div className={`bg-gradient-to-br ${benefit.bgColor} border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl`}>
                           <div className="flex items-start gap-4 mb-4 md:hidden">
-                            <div className="flex-shrink-0 w-12 h-12 bg-[#c41e3a] rounded-full flex items-center justify-center">
+                            <div className="flex-shrink-0 w-12 h-12 bg-[#ae2027] rounded-full flex items-center justify-center">
                               <Icon className="w-6 h-6 text-white" />
                             </div>
                             <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
@@ -180,9 +180,9 @@ export default function PostTestTuitionPage() {
                   return (
                     <div
                       key={index}
-                      className="group bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl"
+                      className="group bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl"
                     >
-                      <div className="w-14 h-14 bg-[#c41e3a] group-hover:bg-[#a01830] rounded-xl flex items-center justify-center mb-4 transition-colors">
+                      <div className="w-14 h-14 bg-[#ae2027] group-hover:bg-[#8a191f] rounded-xl flex items-center justify-center mb-4 transition-colors">
                         <Icon className="w-7 h-7 text-white" />
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
@@ -200,7 +200,7 @@ export default function PostTestTuitionPage() {
         </section>
 
         {/* Insurance Benefits */}
-        <section className="py-12 sm:py-16 bg-gradient-to-br from-[#c41e3a] to-[#a01830]">
+        <section className="py-12 sm:py-16 bg-gradient-to-br from-[#ae2027] to-[#8a191f]">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-8">
@@ -237,7 +237,7 @@ export default function PostTestTuitionPage() {
                 <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 relative">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center text-white">
-                      <Play className="w-20 h-20 mx-auto mb-4 text-[#c41e3a]" />
+                      <Play className="w-20 h-20 mx-auto mb-4 text-[#ae2027]" />
                       <h3 className="text-2xl sm:text-3xl font-bold mb-2">
                         Pass Plus Explained
                       </h3>
@@ -292,7 +292,7 @@ export default function PostTestTuitionPage() {
                         "Develop defensive driving skills"
                       ].map((benefit, index) => (
                         <div key={index} className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-[#c41e3a] flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="w-5 h-5 text-[#ae2027] flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{benefit}</span>
                         </div>
                       ))}
@@ -311,7 +311,7 @@ export default function PostTestTuitionPage() {
                       placeholder="Your Name"
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                       required
                     />
 
@@ -320,7 +320,7 @@ export default function PostTestTuitionPage() {
                       placeholder="Email Address"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                       required
                     />
 
@@ -329,7 +329,7 @@ export default function PostTestTuitionPage() {
                       placeholder="Phone Number"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                       required
                     />
 
@@ -338,7 +338,7 @@ export default function PostTestTuitionPage() {
                       placeholder="Postcode"
                       value={formData.postcode}
                       onChange={(e) => setFormData({...formData, postcode: e.target.value})}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors"
                       required
                     />
 
@@ -347,12 +347,12 @@ export default function PostTestTuitionPage() {
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       rows={4}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#c41e3a] focus:outline-none transition-colors resize-none"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#ae2027] focus:outline-none transition-colors resize-none"
                     />
 
                     <button
                       type="submit"
-                      className="w-full bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                      className="w-full bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                     >
                       <span>SUBMIT ENQUIRY</span>
                       <ArrowRight className="h-5 w-5" />
@@ -370,19 +370,19 @@ export default function PostTestTuitionPage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center p-6 bg-white rounded-2xl border-2 border-gray-200">
-                  <div className="text-4xl font-bold text-[#c41e3a] mb-2">6</div>
+                  <div className="text-4xl font-bold text-[#ae2027] mb-2">6</div>
                   <div className="text-sm text-gray-600">Training Modules</div>
                 </div>
                 <div className="text-center p-6 bg-white rounded-2xl border-2 border-gray-200">
-                  <div className="text-4xl font-bold text-[#c41e3a] mb-2">25%</div>
+                  <div className="text-4xl font-bold text-[#ae2027] mb-2">25%</div>
                   <div className="text-sm text-gray-600">Insurance Discount</div>
                 </div>
                 <div className="text-center p-6 bg-white rounded-2xl border-2 border-gray-200">
-                  <div className="text-4xl font-bold text-[#c41e3a] mb-2">100+</div>
+                  <div className="text-4xl font-bold text-[#ae2027] mb-2">100+</div>
                   <div className="text-sm text-gray-600">Happy Students</div>
                 </div>
                 <div className="text-center p-6 bg-white rounded-2xl border-2 border-gray-200">
-                  <div className="text-4xl font-bold text-[#c41e3a] mb-2">★★★★★</div>
+                  <div className="text-4xl font-bold text-[#ae2027] mb-2">★★★★★</div>
                   <div className="text-sm text-gray-600">5-Star Rated</div>
                 </div>
               </div>

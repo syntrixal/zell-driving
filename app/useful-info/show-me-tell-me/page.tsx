@@ -95,7 +95,7 @@ export default function ShowMeTellMePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                Know your <span className="text-[#c41e3a]">Tell Me</span> questions?
+                Know your <span className="text-[#ae2027]">Tell Me</span> questions?
               </h2>
               <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
                 The show me / Tell section of your test lets the examiner know you understand how to perform basic safety checks and maintenance on your car.
@@ -122,7 +122,7 @@ export default function ShowMeTellMePage() {
               <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden shadow-2xl aspect-video">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
-                    <PlayCircle className="w-20 h-20 mx-auto mb-4 text-[#c41e3a]" />
+                    <PlayCircle className="w-20 h-20 mx-auto mb-4 text-[#ae2027]" />
                     <h4 className="text-2xl sm:text-3xl font-bold mb-2">
                       Driving test 2024: 'show me' questions
                     </h4>
@@ -133,8 +133,8 @@ export default function ShowMeTellMePage() {
 
               {/* Video List */}
               <div className="mt-6 space-y-3">
-                <div className="bg-white border-2 border-gray-200 rounded-lg p-4 flex items-center gap-4 hover:border-[#c41e3a] transition-colors cursor-pointer">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#c41e3a] rounded-lg flex items-center justify-center">
+                <div className="bg-white border-2 border-gray-200 rounded-lg p-4 flex items-center gap-4 hover:border-[#ae2027] transition-colors cursor-pointer">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#ae2027] rounded-lg flex items-center justify-center">
                     <PlayCircle className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -142,8 +142,8 @@ export default function ShowMeTellMePage() {
                     <p className="text-sm text-gray-600">Learn the essential questions</p>
                   </div>
                 </div>
-                <div className="bg-white border-2 border-gray-200 rounded-lg p-4 flex items-center gap-4 hover:border-[#c41e3a] transition-colors cursor-pointer">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#c41e3a] rounded-lg flex items-center justify-center">
+                <div className="bg-white border-2 border-gray-200 rounded-lg p-4 flex items-center gap-4 hover:border-[#ae2027] transition-colors cursor-pointer">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#ae2027] rounded-lg flex items-center justify-center">
                     <PlayCircle className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -166,7 +166,7 @@ export default function ShowMeTellMePage() {
                   onClick={() => setSelectedTab("show")}
                   className={`flex-1 px-6 py-4 rounded-lg font-bold text-base sm:text-lg transition-all duration-300 ${
                     selectedTab === "show"
-                      ? "bg-white text-[#c41e3a] shadow-md border-2 border-[#c41e3a]"
+                      ? "bg-white text-[#ae2027] shadow-md border-2 border-[#ae2027]"
                       : "bg-transparent text-gray-600 hover:bg-white"
                   }`}
                 >
@@ -179,7 +179,7 @@ export default function ShowMeTellMePage() {
                   onClick={() => setSelectedTab("tell")}
                   className={`flex-1 px-6 py-4 rounded-lg font-bold text-base sm:text-lg transition-all duration-300 ${
                     selectedTab === "tell"
-                      ? "bg-white text-[#c41e3a] shadow-md border-2 border-[#c41e3a]"
+                      ? "bg-white text-[#ae2027] shadow-md border-2 border-[#ae2027]"
                       : "bg-transparent text-gray-600 hover:bg-white"
                   }`}
                 >
@@ -207,7 +207,7 @@ export default function ShowMeTellMePage() {
                         {showMeQuestions.map((question, index) => (
                           <div
                             key={index}
-                            className="bg-[#c41e3a] text-white p-4 rounded-lg flex items-start gap-3 hover:bg-[#a01830] transition-colors"
+                            className="bg-[#ae2027] text-white p-4 rounded-lg flex items-start gap-3 hover:bg-[#8a191f] transition-colors"
                           >
                             <Search className="w-5 h-5 flex-shrink-0 mt-0.5" />
                             <p className="text-sm sm:text-base">{question}</p>
@@ -265,7 +265,7 @@ export default function ShowMeTellMePage() {
                         {tellMeQuestions.slice(1).map((item, index) => (
                           <div
                             key={index + 1}
-                            className="bg-[#c41e3a] text-white p-5 rounded-xl cursor-pointer hover:bg-[#a01830] transition-all"
+                            className="bg-[#ae2027] text-white p-5 rounded-xl cursor-pointer hover:bg-[#8a191f] transition-all"
                             onClick={() => setExpandedQuestion(expandedQuestion === index + 1 ? null : index + 1)}
                           >
                             <div className="flex items-start gap-3">
@@ -302,8 +302,8 @@ export default function ShowMeTellMePage() {
               </h3>
 
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 text-center hover:border-[#c41e3a] transition-colors">
-                  <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 text-center hover:border-[#ae2027] transition-colors">
+                  <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                     <CheckCircle className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3">
@@ -314,8 +314,8 @@ export default function ShowMeTellMePage() {
                   </p>
                 </div>
 
-                <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 text-center hover:border-[#c41e3a] transition-colors">
-                  <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 text-center hover:border-[#ae2027] transition-colors">
+                  <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                     <AlertCircle className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3">
@@ -326,8 +326,8 @@ export default function ShowMeTellMePage() {
                   </p>
                 </div>
 
-                <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 text-center hover:border-[#c41e3a] transition-colors">
-                  <div className="w-16 h-16 bg-[#c41e3a] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 text-center hover:border-[#ae2027] transition-colors">
+                  <div className="w-16 h-16 bg-[#ae2027] rounded-full flex items-center justify-center mx-auto mb-4">
                     <Search className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3">
@@ -354,7 +354,7 @@ export default function ShowMeTellMePage() {
               </p>
               <a
                 href="/book-now"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Book a Lesson
                 <CheckCircle className="h-5 w-5" />

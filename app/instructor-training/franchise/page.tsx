@@ -45,7 +45,7 @@ const whatYouGet = [
   },
   {
     title: "Professional Development and Training",
-    description: "Access exclusive training programs from Drive 4 Pass Instructor Training to keep your skills sharp and relevant to today's driving standards."
+    description: "Access exclusive training programs from Zell Driving School Instructor Training to keep your skills sharp and relevant to today's driving standards."
   },
   {
     title: "Modern Teaching Tools",
@@ -65,7 +65,7 @@ const testimonials = [
   {
     name: "Michael Johnson",
     role: "Franchise Partner",
-    text: "Joining Drive 4 Pass was the best decision for my career. The support and leads keep my diary full, and I have complete control over my schedule.",
+    text: "Joining Zell Driving School was the best decision for my career. The support and leads keep my diary full, and I have complete control over my schedule.",
     rating: 5
   },
   {
@@ -97,7 +97,7 @@ export default function FranchisePage() {
         {/* Hero Section with Image */}
         <section className="relative py-16 sm:py-20 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#c41e3a] to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#ae2027] to-transparent"></div>
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-6xl mx-auto">
@@ -107,12 +107,12 @@ export default function FranchisePage() {
                     Join our Successful Driving Instructor Franchise - Grow your career today
                   </h2>
                   <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
-                    Are you an Approved Driving Instructor looking to grow your business without the hassle of long-term commitments? Join Drive 4 Pass and benefit from flexible franchise packages, expert support, and modern teaching tools that help you succeed. Start filling your diary and achieve the work-life balance you desire.
+                    Are you an Approved Driving Instructor looking to grow your business without the hassle of long-term commitments? Join Zell Driving School and benefit from flexible franchise packages, expert support, and modern teaching tools that help you succeed. Start filling your diary and achieve the work-life balance you desire.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                       href="/book-now"
-                      className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                      className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
                     >
                       Get Started Today
                       <ArrowRight className="h-5 w-5" />
@@ -127,11 +127,11 @@ export default function FranchisePage() {
                   </div>
                 </div>
                 <div className="relative">
-                  <div className="aspect-square bg-gradient-to-br from-[#c41e3a] to-[#a01830] rounded-3xl p-8 shadow-2xl">
+                  <div className="aspect-square bg-gradient-to-br from-[#ae2027] to-[#8a191f] rounded-3xl p-8 shadow-2xl">
                     <div className="w-full h-full bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
                       <div className="text-center">
                         <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                          <Briefcase className="w-12 h-12 text-[#c41e3a]" />
+                          <Briefcase className="w-12 h-12 text-[#ae2027]" />
                         </div>
                         <h3 className="text-2xl font-bold text-white mb-4">
                           Franchise Opportunities
@@ -168,7 +168,7 @@ export default function FranchisePage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                  Why Join Drive 4 Pass Franchise?
+                  Why Join Zell Driving School Franchise?
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                   Build a successful driving instruction business with our proven franchise model
@@ -181,9 +181,9 @@ export default function FranchisePage() {
                   return (
                     <div
                       key={index}
-                      className="group bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl p-8 transition-all duration-300 hover:shadow-xl"
+                      className="group bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl p-8 transition-all duration-300 hover:shadow-xl"
                     >
-                      <div className="w-16 h-16 bg-[#c41e3a] group-hover:bg-[#a01830] rounded-full flex items-center justify-center mb-6 transition-colors">
+                      <div className="w-16 h-16 bg-[#ae2027] group-hover:bg-[#8a191f] rounded-full flex items-center justify-center mb-6 transition-colors">
                         <Icon className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -214,12 +214,12 @@ export default function FranchisePage() {
                     placeholder="Enter your postcode"
                     value={postcode}
                     onChange={(e) => setPostcode(e.target.value)}
-                    className="flex-1 px-6 py-4 border-2 border-gray-300 rounded-lg focus:border-[#c41e3a] focus:outline-none text-lg"
+                    className="flex-1 px-6 py-4 border-2 border-gray-300 rounded-lg focus:border-[#ae2027] focus:outline-none text-lg"
                     required
                   />
                   <button
                     type="submit"
-                    className="px-8 py-4 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap"
+                    className="px-8 py-4 bg-[#ae2027] hover:bg-[#8a191f] text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap"
                   >
                     Start Here
                   </button>
@@ -246,10 +246,10 @@ export default function FranchisePage() {
                 {whatYouGet.map((item, index) => (
                   <div
                     key={index}
-                    className="flex gap-4 p-6 bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-xl transition-all duration-300 hover:shadow-lg"
+                    className="flex gap-4 p-6 bg-gray-50 hover:bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-xl transition-all duration-300 hover:shadow-lg"
                   >
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-[#c41e3a] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#ae2027] rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
                     </div>
@@ -277,7 +277,7 @@ export default function FranchisePage() {
                   Success Stories from Our Franchise Partners
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Hear from instructors who've grown their careers with Drive 4 Pass
+                  Hear from instructors who've grown their careers with Zell Driving School
                 </p>
               </div>
 
@@ -285,7 +285,7 @@ export default function FranchisePage() {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="bg-white border-2 border-gray-200 hover:border-[#c41e3a] rounded-2xl p-8 transition-all duration-300 hover:shadow-xl"
+                    className="bg-white border-2 border-gray-200 hover:border-[#ae2027] rounded-2xl p-8 transition-all duration-300 hover:shadow-xl"
                   >
                     <div className="flex gap-1 mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -296,7 +296,7 @@ export default function FranchisePage() {
                       "{testimonial.text}"
                     </p>
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-[#c41e3a] rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#ae2027] rounded-full flex items-center justify-center">
                         <span className="text-white font-bold text-lg">
                           {testimonial.name.charAt(0)}
                         </span>
@@ -319,19 +319,19 @@ export default function FranchisePage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#c41e3a] mb-2">500+</div>
+                  <div className="text-4xl sm:text-5xl font-bold text-[#ae2027] mb-2">500+</div>
                   <p className="text-gray-600 font-medium">Active Instructors</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#c41e3a] mb-2">95%</div>
+                  <div className="text-4xl sm:text-5xl font-bold text-[#ae2027] mb-2">95%</div>
                   <p className="text-gray-600 font-medium">Partner Satisfaction</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#c41e3a] mb-2">10K+</div>
+                  <div className="text-4xl sm:text-5xl font-bold text-[#ae2027] mb-2">10K+</div>
                   <p className="text-gray-600 font-medium">Students Taught</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#c41e3a] mb-2">24/7</div>
+                  <div className="text-4xl sm:text-5xl font-bold text-[#ae2027] mb-2">24/7</div>
                   <p className="text-gray-600 font-medium">Support Available</p>
                 </div>
               </div>
@@ -340,7 +340,7 @@ export default function FranchisePage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-16 sm:py-20 bg-gradient-to-r from-[#c41e3a] to-[#a01830]">
+        <section className="py-16 sm:py-20 bg-gradient-to-r from-[#ae2027] to-[#8a191f]">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
@@ -352,7 +352,7 @@ export default function FranchisePage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
       <Link
         href="/book-now"
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-[#c41e3a] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white hover:bg-gray-100 text-[#ae2027] font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
       >
                   Apply Now
                   <ArrowRight className="h-5 w-5" />
@@ -374,29 +374,29 @@ export default function FranchisePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-[#c41e3a] transition-all">
+                <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-[#ae2027] transition-all">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-[#c41e3a] rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#ae2027] rounded-full flex items-center justify-center">
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">Call Us</h3>
                   </div>
                   <p className="text-gray-600 mb-4">Speak to our franchise team</p>
-                  <a href="tel:03333357000" className="text-2xl font-bold text-[#c41e3a] hover:text-[#a01830]">
+                  <a href="tel:03333357000" className="text-2xl font-bold text-[#ae2027] hover:text-[#8a191f]">
                     0333 335 7000
                   </a>
                 </div>
 
-                <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-[#c41e3a] transition-all">
+                <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-[#ae2027] transition-all">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-[#c41e3a] rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#ae2027] rounded-full flex items-center justify-center">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">Email Us</h3>
                   </div>
                   <p className="text-gray-600 mb-4">Get franchise information</p>
-                  <a href="mailto:franchise@drive4pass.co.uk" className="text-lg font-bold text-[#c41e3a] hover:text-[#a01830] break-all">
-                    franchise@drive4pass.co.uk
+                  <a href="mailto:franchise@zelldrivingschool.co.uk" className="text-lg font-bold text-[#ae2027] hover:text-[#8a191f] break-all">
+                    franchise@zelldrivingschool.co.uk
                   </a>
                 </div>
               </div>

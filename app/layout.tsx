@@ -12,7 +12,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Zell Driving School",
   description:
-    "Professional driving lessons, intensives, instructor training, and useful learner resources. Learn driving with confidence and safety.",
+    "Zell Driving School Liverpool – Automatic driving lessons only. Learn automatic driving in Liverpool with professional, DVSA-approved instructors. Book your lessons today.",
 };
 
 export default function RootLayout({
